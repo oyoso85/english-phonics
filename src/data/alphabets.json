@@ -1,0 +1,210 @@
+[
+  {
+    "letter": "A",
+    "uppercase": "A",
+    "lowercase": "a",
+    "exampleWord": "Apple",
+    "exampleImage": "/assets/images/apple.png",
+    "audioFile": "/assets/audio/alphabet-a.mp3"
+  },
+  {
+    "letter": "B",
+    "uppercase": "B",
+    "lowercase": "b",
+    "exampleWord": "Ball",
+    "exampleImage": "/assets/images/ball.png",
+    "audioFile": "/assets/audio/alphabet-b.mp3"
+  },
+  {
+    "letter": "C",
+    "uppercase": "C",
+    "lowercase": "c",
+    "exampleWord": "Cat",
+    "exampleImage": "/assets/images/cat.png",
+    "audioFile": "/assets/audio/alphabet-c.mp3"
+  },
+  {
+    "letter": "D",
+    "uppercase": "D",
+    "lowercase": "d",
+    "exampleWord": "Dog",
+    "exampleImage": "/assets/images/dog.png",
+    "audioFile": "/assets/audio/alphabet-d.mp3"
+  },
+  {
+    "letter": "E",
+    "uppercase": "E",
+    "lowercase": "e",
+    "exampleWord": "Elephant",
+    "exampleImage": "/assets/images/elephant.png",
+    "audioFile": "/assets/audio/alphabet-e.mp3"
+  },
+  {
+    "letter": "F",
+    "uppercase": "F",
+    "lowercase": "f",
+    "exampleWord": "Fish",
+    "exampleImage": "/assets/images/fish.png",
+    "audioFile": "/assets/audio/alphabet-f.mp3"
+  },
+  {
+    "letter": "G",
+    "uppercase": "G",
+    "lowercase": "g",
+    "exampleWord": "Grape",
+    "exampleImage": "/assets/images/grape.png",
+    "audioFile": "/assets/audio/alphabet-g.mp3"
+  },
+  {
+    "letter": "H",
+    "uppercase": "H",
+    "lowercase": "h",
+    "exampleWord": "Hat",
+    "exampleImage": "/assets/images/hat.png",
+    "audioFile": "/assets/audio/alphabet-h.mp3"
+  },
+  {
+    "letter": "I",
+    "uppercase": "I",
+    "lowercase": "i",
+    "exampleWord": "Ice cream",
+    "exampleImage": "/assets/images/ice-cream.png",
+    "audioFile": "/assets/audio/alphabet-i.mp3"
+  },
+  {
+    "letter": "J",
+    "uppercase": "J",
+    "lowercase": "j",
+    "exampleWord": "Juice",
+    "exampleImage": "/assets/images/juice.png",
+    "audioFile": "/assets/audio/alphabet-j.mp3"
+  },
+  {
+    "letter": "K",
+    "uppercase": "K",
+    "lowercase": "k",
+    "exampleWord": "Kite",
+    "exampleImage": "/assets/images/kite.png",
+    "audioFile": "/assets/audio/alphabet-k.mp3"
+  },
+  {
+    "letter": "L",
+    "uppercase": "L",
+    "lowercase": "l",
+    "exampleWord": "Lion",
+    "exampleImage": "/assets/images/lion.png",
+    "audioFile": "/assets/audio/alphabet-l.mp3"
+  },
+  {
+    "letter": "M",
+    "uppercase": "M",
+    "lowercase": "m",
+    "exampleWord": "Monkey",
+    "exampleImage": "/assets/images/monkey.png",
+    "audioFile": "/assets/audio/alphabet-m.mp3"
+  },
+  {
+    "letter": "N",
+    "uppercase": "N",
+    "lowercase": "n",
+    "exampleWord": "Nose",
+    "exampleImage": "/assets/images/nose.png",
+    "audioFile": "/assets/audio/alphabet-n.mp3"
+  },
+  {
+    "letter": "O",
+    "uppercase": "O",
+    "lowercase": "o",
+    "exampleWord": "Orange",
+    "exampleImage": "/assets/images/orange.png",
+    "audioFile": "/assets/audio/alphabet-o.mp3"
+  },
+  {
+    "letter": "P",
+    "uppercase": "P",
+    "lowercase": "p",
+    "exampleWord": "Pig",
+    "exampleImage": "/assets/images/pig.png",
+    "audioFile": "/assets/audio/alphabet-p.mp3"
+  },
+  {
+    "letter": "Q",
+    "uppercase": "Q",
+    "lowercase": "q",
+    "exampleWord": "Queen",
+    "exampleImage": "/assets/images/queen.png",
+    "audioFile": "/assets/audio/alphabet-q.mp3"
+  },
+  {
+    "letter": "R",
+    "uppercase": "R",
+    "lowercase": "r",
+    "exampleWord": "Rabbit",
+    "exampleImage": "/assets/images/rabbit.png",
+    "audioFile": "/assets/audio/alphabet-r.mp3"
+  },
+  {
+    "letter": "S",
+    "uppercase": "S",
+    "lowercase": "s",
+    "exampleWord": "Sun",
+    "exampleImage": "/assets/images/sun.png",
+    "audioFile": "/assets/audio/alphabet-s.mp3"
+  },
+  {
+    "letter": "T",
+    "uppercase": "T",
+    "lowercase": "t",
+    "exampleWord": "Tiger",
+    "exampleImage": "/assets/images/tiger.png",
+    "audioFile": "/assets/audio/alphabet-t.mp3"
+  },
+  {
+    "letter": "U",
+    "uppercase": "U",
+    "lowercase": "u",
+    "exampleWord": "Umbrella",
+    "exampleImage": "/assets/images/umbrella.png",
+    "audioFile": "/assets/audio/alphabet-u.mp3"
+  },
+  {
+    "letter": "V",
+    "uppercase": "V",
+    "lowercase": "v",
+    "exampleWord": "Van",
+    "exampleImage": "/assets/images/van.png",
+    "audioFile": "/assets/audio/alphabet-v.mp3"
+  },
+  {
+    "letter": "W",
+    "uppercase": "W",
+    "lowercase": "w",
+    "exampleWord": "Water",
+    "exampleImage": "/assets/images/water.png",
+    "audioFile": "/assets/audio/alphabet-w.mp3"
+  },
+  {
+    "letter": "X",
+    "uppercase": "X",
+    "lowercase": "x",
+    "exampleWord": "Xylophone",
+    "exampleImage": "/assets/images/xylophone.png",
+    "audioFile": "/assets/audio/alphabet-x.mp3"
+  },
+  {
+    "letter": "Y",
+    "uppercase": "Y",
+    "lowercase": "y",
+    "exampleWord": "Yellow",
+    "exampleImage": "/assets/images/yellow.png",
+    "audioFile": "/assets/audio/alphabet-y.mp3"
+  },
+  {
+    "letter": "Z",
+    "uppercase": "Z",
+    "lowercase": "z",
+    "exampleWord": "Zebra",
+    "exampleImage": "/assets/images/zebra.png",
+    "audioFile": "/assets/audio/alphabet-z.mp3"
+  }
+]

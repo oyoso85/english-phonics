@@ -33,3 +33,13 @@ dist-ssr
 # Build files
 build
 .cache
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+env/

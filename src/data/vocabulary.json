@@ -1,0 +1,614 @@
+{
+  "categories": {
+    "food-ingredients": [
+      {
+        "id": "apple",
+        "spelling": "Apple",
+        "image": "/assets/images/apple.png",
+        "audio": "/assets/audio/word-apple.mp3"
+      },
+      {
+        "id": "banana",
+        "spelling": "Banana",
+        "image": "/assets/images/banana.png",
+        "audio": "/assets/audio/word-banana.mp3"
+      },
+      {
+        "id": "carrot",
+        "spelling": "Carrot",
+        "image": "/assets/images/carrot.png",
+        "audio": "/assets/audio/word-carrot.mp3"
+      },
+      {
+        "id": "egg",
+        "spelling": "Egg",
+        "image": "/assets/images/egg.png",
+        "audio": "/assets/audio/word-egg.mp3"
+      },
+      {
+        "id": "fish",
+        "spelling": "Fish",
+        "image": "/assets/images/fish.png",
+        "audio": "/assets/audio/word-fish.mp3"
+      },
+      {
+        "id": "grape",
+        "spelling": "Grape",
+        "image": "/assets/images/grape.png",
+        "audio": "/assets/audio/word-grape.mp3"
+      },
+      {
+        "id": "milk",
+        "spelling": "Milk",
+        "image": "/assets/images/milk.png",
+        "audio": "/assets/audio/word-milk.mp3"
+      },
+      {
+        "id": "rice",
+        "spelling": "Rice",
+        "image": "/assets/images/rice.png",
+        "audio": "/assets/audio/word-rice.mp3"
+      },
+      {
+        "id": "tomato",
+        "spelling": "Tomato",
+        "image": "/assets/images/tomato.png",
+        "audio": "/assets/audio/word-tomato.mp3"
+      },
+      {
+        "id": "water",
+        "spelling": "Water",
+        "image": "/assets/images/water.png",
+        "audio": "/assets/audio/word-water.mp3"
+      },
+      {
+        "id": "bread",
+        "spelling": "Bread",
+        "image": "/assets/images/bread.png",
+        "audio": "/assets/audio/word-bread.mp3"
+      },
+      {
+        "id": "cheese",
+        "spelling": "Cheese",
+        "image": "/assets/images/cheese.png",
+        "audio": "/assets/audio/word-cheese.mp3"
+      },
+      {
+        "id": "chicken",
+        "spelling": "Chicken",
+        "image": "/assets/images/chicken.png",
+        "audio": "/assets/audio/word-chicken.mp3"
+      },
+      {
+        "id": "corn",
+        "spelling": "Corn",
+        "image": "/assets/images/corn.png",
+        "audio": "/assets/audio/word-corn.mp3"
+      },
+      {
+        "id": "lemon",
+        "spelling": "Lemon",
+        "image": "/assets/images/lemon.png",
+        "audio": "/assets/audio/word-lemon.mp3"
+      },
+      {
+        "id": "meat",
+        "spelling": "Meat",
+        "image": "/assets/images/meat.png",
+        "audio": "/assets/audio/word-meat.mp3"
+      },
+      {
+        "id": "orange",
+        "spelling": "Orange",
+        "image": "/assets/images/orange.png",
+        "audio": "/assets/audio/word-orange.mp3"
+      },
+      {
+        "id": "potato",
+        "spelling": "Potato",
+        "image": "/assets/images/potato.png",
+        "audio": "/assets/audio/word-potato.mp3"
+      },
+      {
+        "id": "salt",
+        "spelling": "Salt",
+        "image": "/assets/images/salt.png",
+        "audio": "/assets/audio/word-salt.mp3"
+      },
+      {
+        "id": "sugar",
+        "spelling": "Sugar",
+        "image": "/assets/images/sugar.png",
+        "audio": "/assets/audio/word-sugar.mp3"
+      }
+    ],
+    "cooking": [
+      {
+        "id": "bowl",
+        "spelling": "Bowl",
+        "image": "/assets/images/bowl.png",
+        "audio": "/assets/audio/word-bowl.mp3"
+      },
+      {
+        "id": "cup",
+        "spelling": "Cup",
+        "image": "/assets/images/cup.png",
+        "audio": "/assets/audio/word-cup.mp3"
+      },
+      {
+        "id": "fork",
+        "spelling": "Fork",
+        "image": "/assets/images/fork.png",
+        "audio": "/assets/audio/word-fork.mp3"
+      },
+      {
+        "id": "knife",
+        "spelling": "Knife",
+        "image": "/assets/images/knife.png",
+        "audio": "/assets/audio/word-knife.mp3"
+      },
+      {
+        "id": "plate",
+        "spelling": "Plate",
+        "image": "/assets/images/plate.png",
+        "audio": "/assets/audio/word-plate.mp3"
+      },
+      {
+        "id": "pot",
+        "spelling": "Pot",
+        "image": "/assets/images/pot.png",
+        "audio": "/assets/audio/word-pot.mp3"
+      },
+      {
+        "id": "spoon",
+        "spelling": "Spoon",
+        "image": "/assets/images/spoon.png",
+        "audio": "/assets/audio/word-spoon.mp3"
+      },
+      {
+        "id": "stove",
+        "spelling": "Stove",
+        "image": "/assets/images/stove.png",
+        "audio": "/assets/audio/word-stove.mp3"
+      },
+      {
+        "id": "table",
+        "spelling": "Table",
+        "image": "/assets/images/table.png",
+        "audio": "/assets/audio/word-table.mp3"
+      },
+      {
+        "id": "chair",
+        "spelling": "Chair",
+        "image": "/assets/images/chair.png",
+        "audio": "/assets/audio/word-chair.mp3"
+      },
+      {
+        "id": "chopsticks",
+        "spelling": "Chopsticks",
+        "image": "/assets/images/chopsticks.png",
+        "audio": "/assets/audio/word-chopsticks.mp3"
+      },
+      {
+        "id": "glass",
+        "spelling": "Glass",
+        "image": "/assets/images/glass.png",
+        "audio": "/assets/audio/word-glass.mp3"
+      },
+      {
+        "id": "kettle",
+        "spelling": "Kettle",
+        "image": "/assets/images/kettle.png",
+        "audio": "/assets/audio/word-kettle.mp3"
+      },
+      {
+        "id": "oven",
+        "spelling": "Oven",
+        "image": "/assets/images/oven.png",
+        "audio": "/assets/audio/word-oven.mp3"
+      },
+      {
+        "id": "pan",
+        "spelling": "Pan",
+        "image": "/assets/images/pan.png",
+        "audio": "/assets/audio/word-pan.mp3"
+      },
+      {
+        "id": "bottle",
+        "spelling": "Bottle",
+        "image": "/assets/images/bottle.png",
+        "audio": "/assets/audio/word-bottle.mp3"
+      },
+      {
+        "id": "napkin",
+        "spelling": "Napkin",
+        "image": "/assets/images/napkin.png",
+        "audio": "/assets/audio/word-napkin.mp3"
+      },
+      {
+        "id": "dish",
+        "spelling": "Dish",
+        "image": "/assets/images/dish.png",
+        "audio": "/assets/audio/word-dish.mp3"
+      },
+      {
+        "id": "tray",
+        "spelling": "Tray",
+        "image": "/assets/images/tray.png",
+        "audio": "/assets/audio/word-tray.mp3"
+      },
+      {
+        "id": "lid",
+        "spelling": "Lid",
+        "image": "/assets/images/lid.png",
+        "audio": "/assets/audio/word-lid.mp3"
+      }
+    ],
+    "animals": [
+      {
+        "id": "cat",
+        "spelling": "Cat",
+        "image": "/assets/images/cat.png",
+        "audio": "/assets/audio/word-cat.mp3"
+      },
+      {
+        "id": "dog",
+        "spelling": "Dog",
+        "image": "/assets/images/dog.png",
+        "audio": "/assets/audio/word-dog.mp3"
+      },
+      {
+        "id": "bird",
+        "spelling": "Bird",
+        "image": "/assets/images/bird.png",
+        "audio": "/assets/audio/word-bird.mp3"
+      },
+      {
+        "id": "fish",
+        "spelling": "Fish",
+        "image": "/assets/images/fish.png",
+        "audio": "/assets/audio/word-fish.mp3"
+      },
+      {
+        "id": "lion",
+        "spelling": "Lion",
+        "image": "/assets/images/lion.png",
+        "audio": "/assets/audio/word-lion.mp3"
+      },
+      {
+        "id": "elephant",
+        "spelling": "Elephant",
+        "image": "/assets/images/elephant.png",
+        "audio": "/assets/audio/word-elephant.mp3"
+      },
+      {
+        "id": "rabbit",
+        "spelling": "Rabbit",
+        "image": "/assets/images/rabbit.png",
+        "audio": "/assets/audio/word-rabbit.mp3"
+      },
+      {
+        "id": "bear",
+        "spelling": "Bear",
+        "image": "/assets/images/bear.png",
+        "audio": "/assets/audio/word-bear.mp3"
+      },
+      {
+        "id": "monkey",
+        "spelling": "Monkey",
+        "image": "/assets/images/monkey.png",
+        "audio": "/assets/audio/word-monkey.mp3"
+      },
+      {
+        "id": "tiger",
+        "spelling": "Tiger",
+        "image": "/assets/images/tiger.png",
+        "audio": "/assets/audio/word-tiger.mp3"
+      },
+      {
+        "id": "cow",
+        "spelling": "Cow",
+        "image": "/assets/images/cow.png",
+        "audio": "/assets/audio/word-cow.mp3"
+      },
+      {
+        "id": "pig",
+        "spelling": "Pig",
+        "image": "/assets/images/pig.png",
+        "audio": "/assets/audio/word-pig.mp3"
+      },
+      {
+        "id": "sheep",
+        "spelling": "Sheep",
+        "image": "/assets/images/sheep.png",
+        "audio": "/assets/audio/word-sheep.mp3"
+      },
+      {
+        "id": "horse",
+        "spelling": "Horse",
+        "image": "/assets/images/horse.png",
+        "audio": "/assets/audio/word-horse.mp3"
+      },
+      {
+        "id": "duck",
+        "spelling": "Duck",
+        "image": "/assets/images/duck.png",
+        "audio": "/assets/audio/word-duck.mp3"
+      },
+      {
+        "id": "frog",
+        "spelling": "Frog",
+        "image": "/assets/images/frog.png",
+        "audio": "/assets/audio/word-frog.mp3"
+      },
+      {
+        "id": "giraffe",
+        "spelling": "Giraffe",
+        "image": "/assets/images/giraffe.png",
+        "audio": "/assets/audio/word-giraffe.mp3"
+      },
+      {
+        "id": "panda",
+        "spelling": "Panda",
+        "image": "/assets/images/panda.png",
+        "audio": "/assets/audio/word-panda.mp3"
+      },
+      {
+        "id": "fox",
+        "spelling": "Fox",
+        "image": "/assets/images/fox.png",
+        "audio": "/assets/audio/word-fox.mp3"
+      },
+      {
+        "id": "wolf",
+        "spelling": "Wolf",
+        "image": "/assets/images/wolf.png",
+        "audio": "/assets/audio/word-wolf.mp3"
+      }
+    ],
+    "vehicles": [
+      {
+        "id": "car",
+        "spelling": "Car",
+        "image": "/assets/images/car.png",
+        "audio": "/assets/audio/word-car.mp3"
+      },
+      {
+        "id": "bus",
+        "spelling": "Bus",
+        "image": "/assets/images/bus.png",
+        "audio": "/assets/audio/word-bus.mp3"
+      },
+      {
+        "id": "train",
+        "spelling": "Train",
+        "image": "/assets/images/train.png",
+        "audio": "/assets/audio/word-train.mp3"
+      },
+      {
+        "id": "airplane",
+        "spelling": "Airplane",
+        "image": "/assets/images/airplane.png",
+        "audio": "/assets/audio/word-airplane.mp3"
+      },
+      {
+        "id": "bike",
+        "spelling": "Bike",
+        "image": "/assets/images/bike.png",
+        "audio": "/assets/audio/word-bike.mp3"
+      },
+      {
+        "id": "boat",
+        "spelling": "Boat",
+        "image": "/assets/images/boat.png",
+        "audio": "/assets/audio/word-boat.mp3"
+      },
+      {
+        "id": "truck",
+        "spelling": "Truck",
+        "image": "/assets/images/truck.png",
+        "audio": "/assets/audio/word-truck.mp3"
+      },
+      {
+        "id": "taxi",
+        "spelling": "Taxi",
+        "image": "/assets/images/taxi.png",
+        "audio": "/assets/audio/word-taxi.mp3"
+      },
+      {
+        "id": "ship",
+        "spelling": "Ship",
+        "image": "/assets/images/ship.png",
+        "audio": "/assets/audio/word-ship.mp3"
+      },
+      {
+        "id": "helicopter",
+        "spelling": "Helicopter",
+        "image": "/assets/images/helicopter.png",
+        "audio": "/assets/audio/word-helicopter.mp3"
+      },
+      {
+        "id": "motorcycle",
+        "spelling": "Motorcycle",
+        "image": "/assets/images/motorcycle.png",
+        "audio": "/assets/audio/word-motorcycle.mp3"
+      },
+      {
+        "id": "subway",
+        "spelling": "Subway",
+        "image": "/assets/images/subway.png",
+        "audio": "/assets/audio/word-subway.mp3"
+      },
+      {
+        "id": "scooter",
+        "spelling": "Scooter",
+        "image": "/assets/images/scooter.png",
+        "audio": "/assets/audio/word-scooter.mp3"
+      },
+      {
+        "id": "rocket",
+        "spelling": "Rocket",
+        "image": "/assets/images/rocket.png",
+        "audio": "/assets/audio/word-rocket.mp3"
+      },
+      {
+        "id": "ambulance",
+        "spelling": "Ambulance",
+        "image": "/assets/images/ambulance.png",
+        "audio": "/assets/audio/word-ambulance.mp3"
+      },
+      {
+        "id": "van",
+        "spelling": "Van",
+        "image": "/assets/images/van.png",
+        "audio": "/assets/audio/word-van.mp3"
+      },
+      {
+        "id": "police-car",
+        "spelling": "Police car",
+        "image": "/assets/images/police-car.png",
+        "audio": "/assets/audio/word-police-car.mp3"
+      },
+      {
+        "id": "fire-truck",
+        "spelling": "Fire truck",
+        "image": "/assets/images/fire-truck.png",
+        "audio": "/assets/audio/word-fire-truck.mp3"
+      },
+      {
+        "id": "tram",
+        "spelling": "Tram",
+        "image": "/assets/images/tram.png",
+        "audio": "/assets/audio/word-tram.mp3"
+      },
+      {
+        "id": "yacht",
+        "spelling": "Yacht",
+        "image": "/assets/images/yacht.png",
+        "audio": "/assets/audio/word-yacht.mp3"
+      }
+    ],
+    "body-parts": [
+      {
+        "id": "head",
+        "spelling": "Head",
+        "image": "/assets/images/head.png",
+        "audio": "/assets/audio/word-head.mp3"
+      },
+      {
+        "id": "eye",
+        "spelling": "Eye",
+        "image": "/assets/images/eye.png",
+        "audio": "/assets/audio/word-eye.mp3"
+      },
+      {
+        "id": "ear",
+        "spelling": "Ear",
+        "image": "/assets/images/ear.png",
+        "audio": "/assets/audio/word-ear.mp3"
+      },
+      {
+        "id": "nose",
+        "spelling": "Nose",
+        "image": "/assets/images/nose.png",
+        "audio": "/assets/audio/word-nose.mp3"
+      },
+      {
+        "id": "mouth",
+        "spelling": "Mouth",
+        "image": "/assets/images/mouth.png",
+        "audio": "/assets/audio/word-mouth.mp3"
+      },
+      {
+        "id": "hand",
+        "spelling": "Hand",
+        "image": "/assets/images/hand.png",
+        "audio": "/assets/audio/word-hand.mp3"
+      },
+      {
+        "id": "foot",
+        "spelling": "Foot",
+        "image": "/assets/images/foot.png",
+        "audio": "/assets/audio/word-foot.mp3"
+      },
+      {
+        "id": "arm",
+        "spelling": "Arm",
+        "image": "/assets/images/arm.png",
+        "audio": "/assets/audio/word-arm.mp3"
+      },
+      {
+        "id": "leg",
+        "spelling": "Leg",
+        "image": "/assets/images/leg.png",
+        "audio": "/assets/audio/word-leg.mp3"
+      },
+      {
+        "id": "hair",
+        "spelling": "Hair",
+        "image": "/assets/images/hair.png",
+        "audio": "/assets/audio/word-hair.mp3"
+      },
+      {
+        "id": "finger",
+        "spelling": "Finger",
+        "image": "/assets/images/finger.png",
+        "audio": "/assets/audio/word-finger.mp3"
+      },
+      {
+        "id": "toe",
+        "spelling": "Toe",
+        "image": "/assets/images/toe.png",
+        "audio": "/assets/audio/word-toe.mp3"
+      },
+      {
+        "id": "knee",
+        "spelling": "Knee",
+        "image": "/assets/images/knee.png",
+        "audio": "/assets/audio/word-knee.mp3"
+      },
+      {
+        "id": "elbow",
+        "spelling": "Elbow",
+        "image": "/assets/images/elbow.png",
+        "audio": "/assets/audio/word-elbow.mp3"
+      },
+      {
+        "id": "shoulder",
+        "spelling": "Shoulder",
+        "image": "/assets/images/shoulder.png",
+        "audio": "/assets/audio/word-shoulder.mp3"
+      },
+      {
+        "id": "neck",
+        "spelling": "Neck",
+        "image": "/assets/images/neck.png",
+        "audio": "/assets/audio/word-neck.mp3"
+      },
+      {
+        "id": "back",
+        "spelling": "Back",
+        "image": "/assets/images/back.png",
+        "audio": "/assets/audio/word-back.mp3"
+      },
+      {
+        "id": "chest",
+        "spelling": "Chest",
+        "image": "/assets/images/chest.png",
+        "audio": "/assets/audio/word-chest.mp3"
+      },
+      {
+        "id": "stomach",
+        "spelling": "Stomach",
+        "image": "/assets/images/stomach.png",
+        "audio": "/assets/audio/word-stomach.mp3"
+      },
+      {
+        "id": "face",
+        "spelling": "Face",
+        "image": "/assets/images/face.png",
+        "audio": "/assets/audio/word-face.mp3"
+      }
+    ]
+  }
+}

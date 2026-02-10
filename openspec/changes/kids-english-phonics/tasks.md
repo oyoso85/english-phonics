@@ -9,14 +9,14 @@
 
 ## 2. 콘텐츠 데이터 구조 및 에셋
 
-- [ ] 2.1 알파벳 데이터 JSON 구조 정의 (src/data/alphabets.json)
-- [ ] 2.2 단어 데이터 JSON 구조 정의 (src/data/vocabulary.json)
-- [ ] 2.3 대화 데이터 JSON 구조 정의 (src/data/conversations.json)
-- [ ] 2.4 TypeScript 인터페이스 정의 (Alphabet, Vocabulary, Conversation)
-- [ ] 2.5 에셋 디렉토리 구조 생성 (public/assets/audio, public/assets/images)
-- [ ] 2.6 TTS를 사용하여 알파벳 A-Z 오디오 파일 생성 (26개)
-- [ ] 2.7 각 카테고리별 단어 10개 선정 및 TTS 오디오 생성 (50개)
-- [ ] 2.8 대화 7개 세트의 문장 오디오 파일 생성 (약 35개)
+- [x] 2.1 알파벳 데이터 JSON 구조 정의 (src/data/alphabets.json)
+- [x] 2.2 단어 데이터 JSON 구조 정의 (src/data/vocabulary.json)
+- [x] 2.3 대화 데이터 JSON 구조 정의 (src/data/conversations.json)
+- [x] 2.4 TypeScript 인터페이스 정의 (Alphabet, Vocabulary, Conversation)
+- [x] 2.5 에셋 디렉토리 구조 생성 (public/assets/audio, public/assets/images)
+- [x] 2.6 TTS를 사용하여 알파벳 A-Z 오디오 파일 생성 (26개)
+- [x] 2.7 각 카테고리별 단어 20개 선정 및 TTS 오디오 생성 (100개)
+- [x] 2.8 대화 7개 세트의 문장 오디오 파일 생성 (105개 - 각 15문장)
 - [ ] 2.9 알파벳 및 단어 관련 이미지 에셋 준비
 
 ## 3. 전역 상태 관리 및 유틸리티
