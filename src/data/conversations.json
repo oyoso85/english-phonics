@@ -5,63 +5,63 @@
     "sentences": [
       {
         "text": "Hello!",
-        "audio": "/assets/audio/conv-greeting-1.mp3"
+        "audio": "assets/audio/conv-greeting-1.mp3"
       },
       {
         "text": "Hi! How are you?",
-        "audio": "/assets/audio/conv-greeting-2.mp3"
+        "audio": "assets/audio/conv-greeting-2.mp3"
       },
       {
         "text": "I am fine, thank you.",
-        "audio": "/assets/audio/conv-greeting-3.mp3"
+        "audio": "assets/audio/conv-greeting-3.mp3"
       },
       {
         "text": "What is your name?",
-        "audio": "/assets/audio/conv-greeting-4.mp3"
+        "audio": "assets/audio/conv-greeting-4.mp3"
       },
       {
         "text": "My name is Tom.",
-        "audio": "/assets/audio/conv-greeting-5.mp3"
+        "audio": "assets/audio/conv-greeting-5.mp3"
       },
       {
         "text": "Nice to meet you!",
-        "audio": "/assets/audio/conv-greeting-6.mp3"
+        "audio": "assets/audio/conv-greeting-6.mp3"
       },
       {
         "text": "Nice to meet you too.",
-        "audio": "/assets/audio/conv-greeting-7.mp3"
+        "audio": "assets/audio/conv-greeting-7.mp3"
       },
       {
         "text": "How old are you?",
-        "audio": "/assets/audio/conv-greeting-8.mp3"
+        "audio": "assets/audio/conv-greeting-8.mp3"
       },
       {
         "text": "I am five years old.",
-        "audio": "/assets/audio/conv-greeting-9.mp3"
+        "audio": "assets/audio/conv-greeting-9.mp3"
       },
       {
         "text": "Where do you live?",
-        "audio": "/assets/audio/conv-greeting-10.mp3"
+        "audio": "assets/audio/conv-greeting-10.mp3"
       },
       {
         "text": "I live near the park.",
-        "audio": "/assets/audio/conv-greeting-11.mp3"
+        "audio": "assets/audio/conv-greeting-11.mp3"
       },
       {
         "text": "Do you want to play?",
-        "audio": "/assets/audio/conv-greeting-12.mp3"
+        "audio": "assets/audio/conv-greeting-12.mp3"
       },
       {
         "text": "Yes, let's play!",
-        "audio": "/assets/audio/conv-greeting-13.mp3"
+        "audio": "assets/audio/conv-greeting-13.mp3"
       },
       {
         "text": "See you later!",
-        "audio": "/assets/audio/conv-greeting-14.mp3"
+        "audio": "assets/audio/conv-greeting-14.mp3"
       },
       {
         "text": "Goodbye!",
-        "audio": "/assets/audio/conv-greeting-15.mp3"
+        "audio": "assets/audio/conv-greeting-15.mp3"
       }
     ]
   },
@@ -71,63 +71,63 @@
     "sentences": [
       {
         "text": "Let's play together!",
-        "audio": "/assets/audio/conv-role-play-1.mp3"
+        "audio": "assets/audio/conv-role-play-1.mp3"
       },
       {
         "text": "You are the doctor.",
-        "audio": "/assets/audio/conv-role-play-2.mp3"
+        "audio": "assets/audio/conv-role-play-2.mp3"
       },
       {
         "text": "I am the patient.",
-        "audio": "/assets/audio/conv-role-play-3.mp3"
+        "audio": "assets/audio/conv-role-play-3.mp3"
       },
       {
         "text": "What should I do?",
-        "audio": "/assets/audio/conv-role-play-4.mp3"
+        "audio": "assets/audio/conv-role-play-4.mp3"
       },
       {
         "text": "Please sit down.",
-        "audio": "/assets/audio/conv-role-play-5.mp3"
+        "audio": "assets/audio/conv-role-play-5.mp3"
       },
       {
         "text": "Open your mouth, please.",
-        "audio": "/assets/audio/conv-role-play-6.mp3"
+        "audio": "assets/audio/conv-role-play-6.mp3"
       },
       {
         "text": "Say \"Ah\".",
-        "audio": "/assets/audio/conv-role-play-7.mp3"
+        "audio": "assets/audio/conv-role-play-7.mp3"
       },
       {
         "text": "Does it hurt here?",
-        "audio": "/assets/audio/conv-role-play-8.mp3"
+        "audio": "assets/audio/conv-role-play-8.mp3"
       },
       {
         "text": "No, it doesn't hurt.",
-        "audio": "/assets/audio/conv-role-play-9.mp3"
+        "audio": "assets/audio/conv-role-play-9.mp3"
       },
       {
         "text": "You are very brave!",
-        "audio": "/assets/audio/conv-role-play-10.mp3"
+        "audio": "assets/audio/conv-role-play-10.mp3"
       },
       {
         "text": "Here is your medicine.",
-        "audio": "/assets/audio/conv-role-play-11.mp3"
+        "audio": "assets/audio/conv-role-play-11.mp3"
       },
       {
         "text": "Take this three times a day.",
-        "audio": "/assets/audio/conv-role-play-12.mp3"
+        "audio": "assets/audio/conv-role-play-12.mp3"
       },
       {
         "text": "Thank you, doctor!",
-        "audio": "/assets/audio/conv-role-play-13.mp3"
+        "audio": "assets/audio/conv-role-play-13.mp3"
       },
       {
         "text": "You will feel better soon.",
-        "audio": "/assets/audio/conv-role-play-14.mp3"
+        "audio": "assets/audio/conv-role-play-14.mp3"
       },
       {
         "text": "Come back next week.",
-        "audio": "/assets/audio/conv-role-play-15.mp3"
+        "audio": "assets/audio/conv-role-play-15.mp3"
       }
     ]
   },
@@ -137,63 +137,63 @@
     "sentences": [
       {
         "text": "Mom, can you help me?",
-        "audio": "/assets/audio/conv-help-mom-1.mp3"
+        "audio": "assets/audio/conv-help-mom-1.mp3"
       },
       {
         "text": "I need your help.",
-        "audio": "/assets/audio/conv-help-mom-2.mp3"
+        "audio": "assets/audio/conv-help-mom-2.mp3"
       },
       {
         "text": "Can you open this?",
-        "audio": "/assets/audio/conv-help-mom-3.mp3"
+        "audio": "assets/audio/conv-help-mom-3.mp3"
       },
       {
         "text": "Thank you, Mom!",
-        "audio": "/assets/audio/conv-help-mom-4.mp3"
+        "audio": "assets/audio/conv-help-mom-4.mp3"
       },
       {
         "text": "I love you, Mom.",
-        "audio": "/assets/audio/conv-help-mom-5.mp3"
+        "audio": "assets/audio/conv-help-mom-5.mp3"
       },
       {
         "text": "Can you tie my shoes?",
-        "audio": "/assets/audio/conv-help-mom-6.mp3"
+        "audio": "assets/audio/conv-help-mom-6.mp3"
       },
       {
         "text": "I can't reach the shelf.",
-        "audio": "/assets/audio/conv-help-mom-7.mp3"
+        "audio": "assets/audio/conv-help-mom-7.mp3"
       },
       {
         "text": "Can you get it for me?",
-        "audio": "/assets/audio/conv-help-mom-8.mp3"
+        "audio": "assets/audio/conv-help-mom-8.mp3"
       },
       {
         "text": "This is too heavy for me.",
-        "audio": "/assets/audio/conv-help-mom-9.mp3"
+        "audio": "assets/audio/conv-help-mom-9.mp3"
       },
       {
         "text": "Can you carry this?",
-        "audio": "/assets/audio/conv-help-mom-10.mp3"
+        "audio": "assets/audio/conv-help-mom-10.mp3"
       },
       {
         "text": "I don't know how to do this.",
-        "audio": "/assets/audio/conv-help-mom-11.mp3"
+        "audio": "assets/audio/conv-help-mom-11.mp3"
       },
       {
         "text": "Can you show me?",
-        "audio": "/assets/audio/conv-help-mom-12.mp3"
+        "audio": "assets/audio/conv-help-mom-12.mp3"
       },
       {
         "text": "I spilled some water.",
-        "audio": "/assets/audio/conv-help-mom-13.mp3"
+        "audio": "assets/audio/conv-help-mom-13.mp3"
       },
       {
         "text": "Can you help me clean it?",
-        "audio": "/assets/audio/conv-help-mom-14.mp3"
+        "audio": "assets/audio/conv-help-mom-14.mp3"
       },
       {
         "text": "You are the best mom!",
-        "audio": "/assets/audio/conv-help-mom-15.mp3"
+        "audio": "assets/audio/conv-help-mom-15.mp3"
       }
     ]
   },
@@ -203,63 +203,63 @@
     "sentences": [
       {
         "text": "Dad, can you help me?",
-        "audio": "/assets/audio/conv-help-dad-1.mp3"
+        "audio": "assets/audio/conv-help-dad-1.mp3"
       },
       {
         "text": "I can't reach it.",
-        "audio": "/assets/audio/conv-help-dad-2.mp3"
+        "audio": "assets/audio/conv-help-dad-2.mp3"
       },
       {
         "text": "Can you get it for me?",
-        "audio": "/assets/audio/conv-help-dad-3.mp3"
+        "audio": "assets/audio/conv-help-dad-3.mp3"
       },
       {
         "text": "Thank you, Dad!",
-        "audio": "/assets/audio/conv-help-dad-4.mp3"
+        "audio": "assets/audio/conv-help-dad-4.mp3"
       },
       {
         "text": "You are the best, Dad.",
-        "audio": "/assets/audio/conv-help-dad-5.mp3"
+        "audio": "assets/audio/conv-help-dad-5.mp3"
       },
       {
         "text": "Can you fix my toy?",
-        "audio": "/assets/audio/conv-help-dad-6.mp3"
+        "audio": "assets/audio/conv-help-dad-6.mp3"
       },
       {
         "text": "It is broken.",
-        "audio": "/assets/audio/conv-help-dad-7.mp3"
+        "audio": "assets/audio/conv-help-dad-7.mp3"
       },
       {
         "text": "Can you help me build this?",
-        "audio": "/assets/audio/conv-help-dad-8.mp3"
+        "audio": "assets/audio/conv-help-dad-8.mp3"
       },
       {
         "text": "I need to put this together.",
-        "audio": "/assets/audio/conv-help-dad-9.mp3"
+        "audio": "assets/audio/conv-help-dad-9.mp3"
       },
       {
         "text": "Can you teach me?",
-        "audio": "/assets/audio/conv-help-dad-10.mp3"
+        "audio": "assets/audio/conv-help-dad-10.mp3"
       },
       {
         "text": "I want to learn how to do it.",
-        "audio": "/assets/audio/conv-help-dad-11.mp3"
+        "audio": "assets/audio/conv-help-dad-11.mp3"
       },
       {
         "text": "Can we play outside?",
-        "audio": "/assets/audio/conv-help-dad-12.mp3"
+        "audio": "assets/audio/conv-help-dad-12.mp3"
       },
       {
         "text": "Let's play ball!",
-        "audio": "/assets/audio/conv-help-dad-13.mp3"
+        "audio": "assets/audio/conv-help-dad-13.mp3"
       },
       {
         "text": "Can you push me on the swing?",
-        "audio": "/assets/audio/conv-help-dad-14.mp3"
+        "audio": "assets/audio/conv-help-dad-14.mp3"
       },
       {
         "text": "This is so much fun!",
-        "audio": "/assets/audio/conv-help-dad-15.mp3"
+        "audio": "assets/audio/conv-help-dad-15.mp3"
       }
     ]
   },
@@ -269,63 +269,63 @@
     "sentences": [
       {
         "text": "I am happy today.",
-        "audio": "/assets/audio/conv-feelings-1.mp3"
+        "audio": "assets/audio/conv-feelings-1.mp3"
       },
       {
         "text": "I feel sad.",
-        "audio": "/assets/audio/conv-feelings-2.mp3"
+        "audio": "assets/audio/conv-feelings-2.mp3"
       },
       {
         "text": "I am excited!",
-        "audio": "/assets/audio/conv-feelings-3.mp3"
+        "audio": "assets/audio/conv-feelings-3.mp3"
       },
       {
         "text": "I am tired.",
-        "audio": "/assets/audio/conv-feelings-4.mp3"
+        "audio": "assets/audio/conv-feelings-4.mp3"
       },
       {
         "text": "I love this!",
-        "audio": "/assets/audio/conv-feelings-5.mp3"
+        "audio": "assets/audio/conv-feelings-5.mp3"
       },
       {
         "text": "I am scared.",
-        "audio": "/assets/audio/conv-feelings-6.mp3"
+        "audio": "assets/audio/conv-feelings-6.mp3"
       },
       {
         "text": "Don't worry, it's okay.",
-        "audio": "/assets/audio/conv-feelings-7.mp3"
+        "audio": "assets/audio/conv-feelings-7.mp3"
       },
       {
         "text": "I feel angry.",
-        "audio": "/assets/audio/conv-feelings-8.mp3"
+        "audio": "assets/audio/conv-feelings-8.mp3"
       },
       {
         "text": "I need a hug.",
-        "audio": "/assets/audio/conv-feelings-9.mp3"
+        "audio": "assets/audio/conv-feelings-9.mp3"
       },
       {
         "text": "I am so proud!",
-        "audio": "/assets/audio/conv-feelings-10.mp3"
+        "audio": "assets/audio/conv-feelings-10.mp3"
       },
       {
         "text": "This makes me smile.",
-        "audio": "/assets/audio/conv-feelings-11.mp3"
+        "audio": "assets/audio/conv-feelings-11.mp3"
       },
       {
         "text": "I feel much better now.",
-        "audio": "/assets/audio/conv-feelings-12.mp3"
+        "audio": "assets/audio/conv-feelings-12.mp3"
       },
       {
         "text": "I am surprised!",
-        "audio": "/assets/audio/conv-feelings-13.mp3"
+        "audio": "assets/audio/conv-feelings-13.mp3"
       },
       {
         "text": "That was fun!",
-        "audio": "/assets/audio/conv-feelings-14.mp3"
+        "audio": "assets/audio/conv-feelings-14.mp3"
       },
       {
         "text": "I feel sleepy.",
-        "audio": "/assets/audio/conv-feelings-15.mp3"
+        "audio": "assets/audio/conv-feelings-15.mp3"
       }
     ]
   },
@@ -335,63 +335,63 @@
     "sentences": [
       {
         "text": "Can I have some water, please?",
-        "audio": "/assets/audio/conv-request-item-1.mp3"
+        "audio": "assets/audio/conv-request-item-1.mp3"
       },
       {
         "text": "May I have a cookie?",
-        "audio": "/assets/audio/conv-request-item-2.mp3"
+        "audio": "assets/audio/conv-request-item-2.mp3"
       },
       {
         "text": "Can you give me the ball?",
-        "audio": "/assets/audio/conv-request-item-3.mp3"
+        "audio": "assets/audio/conv-request-item-3.mp3"
       },
       {
         "text": "I want some juice, please.",
-        "audio": "/assets/audio/conv-request-item-4.mp3"
+        "audio": "assets/audio/conv-request-item-4.mp3"
       },
       {
         "text": "Can I have more, please?",
-        "audio": "/assets/audio/conv-request-item-5.mp3"
+        "audio": "assets/audio/conv-request-item-5.mp3"
       },
       {
         "text": "May I have a snack?",
-        "audio": "/assets/audio/conv-request-item-6.mp3"
+        "audio": "assets/audio/conv-request-item-6.mp3"
       },
       {
         "text": "Can you pass me the toy?",
-        "audio": "/assets/audio/conv-request-item-7.mp3"
+        "audio": "assets/audio/conv-request-item-7.mp3"
       },
       {
         "text": "I would like some milk.",
-        "audio": "/assets/audio/conv-request-item-8.mp3"
+        "audio": "assets/audio/conv-request-item-8.mp3"
       },
       {
         "text": "Can I have a napkin?",
-        "audio": "/assets/audio/conv-request-item-9.mp3"
+        "audio": "assets/audio/conv-request-item-9.mp3"
       },
       {
         "text": "Please give me the pencil.",
-        "audio": "/assets/audio/conv-request-item-10.mp3"
+        "audio": "assets/audio/conv-request-item-10.mp3"
       },
       {
         "text": "May I have some fruit?",
-        "audio": "/assets/audio/conv-request-item-11.mp3"
+        "audio": "assets/audio/conv-request-item-11.mp3"
       },
       {
         "text": "Can I get a tissue?",
-        "audio": "/assets/audio/conv-request-item-12.mp3"
+        "audio": "assets/audio/conv-request-item-12.mp3"
       },
       {
         "text": "I need my backpack, please.",
-        "audio": "/assets/audio/conv-request-item-13.mp3"
+        "audio": "assets/audio/conv-request-item-13.mp3"
       },
       {
         "text": "Can you hand me that book?",
-        "audio": "/assets/audio/conv-request-item-14.mp3"
+        "audio": "assets/audio/conv-request-item-14.mp3"
       },
       {
         "text": "May I have another one?",
-        "audio": "/assets/audio/conv-request-item-15.mp3"
+        "audio": "assets/audio/conv-request-item-15.mp3"
       }
     ]
   },
@@ -401,63 +401,63 @@
     "sentences": [
       {
         "text": "Please read me a book.",
-        "audio": "/assets/audio/conv-request-action-1.mp3"
+        "audio": "assets/audio/conv-request-action-1.mp3"
       },
       {
         "text": "Can you sing a song?",
-        "audio": "/assets/audio/conv-request-action-2.mp3"
+        "audio": "assets/audio/conv-request-action-2.mp3"
       },
       {
         "text": "Please play with me.",
-        "audio": "/assets/audio/conv-request-action-3.mp3"
+        "audio": "assets/audio/conv-request-action-3.mp3"
       },
       {
         "text": "Can you tie my shoes?",
-        "audio": "/assets/audio/conv-request-action-4.mp3"
+        "audio": "assets/audio/conv-request-action-4.mp3"
       },
       {
         "text": "Please help me draw.",
-        "audio": "/assets/audio/conv-request-action-5.mp3"
+        "audio": "assets/audio/conv-request-action-5.mp3"
       },
       {
         "text": "Can you turn on the light?",
-        "audio": "/assets/audio/conv-request-action-6.mp3"
+        "audio": "assets/audio/conv-request-action-6.mp3"
       },
       {
         "text": "Please open the door.",
-        "audio": "/assets/audio/conv-request-action-7.mp3"
+        "audio": "assets/audio/conv-request-action-7.mp3"
       },
       {
         "text": "Can you close the window?",
-        "audio": "/assets/audio/conv-request-action-8.mp3"
+        "audio": "assets/audio/conv-request-action-8.mp3"
       },
       {
         "text": "Please wait for me.",
-        "audio": "/assets/audio/conv-request-action-9.mp3"
+        "audio": "assets/audio/conv-request-action-9.mp3"
       },
       {
         "text": "Can you hold my hand?",
-        "audio": "/assets/audio/conv-request-action-10.mp3"
+        "audio": "assets/audio/conv-request-action-10.mp3"
       },
       {
         "text": "Please tell me a story.",
-        "audio": "/assets/audio/conv-request-action-11.mp3"
+        "audio": "assets/audio/conv-request-action-11.mp3"
       },
       {
         "text": "Can you show me how?",
-        "audio": "/assets/audio/conv-request-action-12.mp3"
+        "audio": "assets/audio/conv-request-action-12.mp3"
       },
       {
         "text": "Please come here.",
-        "audio": "/assets/audio/conv-request-action-13.mp3"
+        "audio": "assets/audio/conv-request-action-13.mp3"
       },
       {
         "text": "Can you listen to me?",
-        "audio": "/assets/audio/conv-request-action-14.mp3"
+        "audio": "assets/audio/conv-request-action-14.mp3"
       },
       {
         "text": "Please stay with me.",
-        "audio": "/assets/audio/conv-request-action-15.mp3"
+        "audio": "assets/audio/conv-request-action-15.mp3"
       }
     ]
   }

@@ -5,7 +5,7 @@ import { AppProvider } from './context/AppContext'
 function App() {
   return (
     <AppProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <div className="min-h-screen bg-gradient-to-b from-blue-100 to-purple-100">
           <AppRoutes />
         </div>
