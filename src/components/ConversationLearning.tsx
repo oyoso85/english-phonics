@@ -16,7 +16,7 @@ export default function ConversationLearning() {
   const currentSentence = currentSet?.sentences[sentenceIndex];
   const visibleSentences = currentSet?.sentences.slice(0, sentenceIndex + 1) ?? [];
 
-  const { playbackState, currentRepetition, totalRepetitions, play, stop, isPlaying, isCompleted, userGestureRequired, enableAudio } =
+  const { playbackState, currentRepetition, totalRepetitions, waitDuration, play, stop, isPlaying, isCompleted, userGestureRequired, enableAudio } =
     useAudioPlayer({
       repetitions: 1,
       onComplete: () => {
@@ -133,6 +133,7 @@ export default function ConversationLearning() {
               state={playbackState}
               currentRepetition={currentRepetition}
               totalRepetitions={totalRepetitions}
+              waitDuration={waitDuration}
             />
           </div>
 

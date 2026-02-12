@@ -13,7 +13,7 @@ export default function AlphabetLearning() {
   const [isAnimating, setIsAnimating] = useState(false);
   const current = alphabets[currentIndex];
 
-  const { playbackState, currentRepetition, totalRepetitions, play, stop, isPlaying, isCompleted, userGestureRequired, enableAudio } =
+  const { playbackState, currentRepetition, totalRepetitions, waitDuration, play, stop, isPlaying, isCompleted, userGestureRequired, enableAudio } =
     useAudioPlayer({
       repetitions: 3,
       onComplete: () => {},
@@ -151,6 +151,7 @@ export default function AlphabetLearning() {
                 state={playbackState}
                 currentRepetition={currentRepetition}
                 totalRepetitions={totalRepetitions}
+                waitDuration={waitDuration}
               />
             </div>
 

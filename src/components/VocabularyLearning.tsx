@@ -46,7 +46,7 @@ export default function VocabularyLearning() {
   const [isAnimating, setIsAnimating] = useState(false);
   const current = words[currentIndex];
 
-  const { playbackState, currentRepetition, totalRepetitions, play, stop, isPlaying, isCompleted, userGestureRequired, enableAudio } =
+  const { playbackState, currentRepetition, totalRepetitions, waitDuration, play, stop, isPlaying, isCompleted, userGestureRequired, enableAudio } =
     useAudioPlayer({ repetitions: 3 });
 
   useEffect(() => {
@@ -187,6 +187,7 @@ export default function VocabularyLearning() {
                 state={playbackState}
                 currentRepetition={currentRepetition}
                 totalRepetitions={totalRepetitions}
+                waitDuration={waitDuration}
               />
             </div>
 

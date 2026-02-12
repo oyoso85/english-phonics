@@ -11,6 +11,7 @@ interface UseAudioPlayerReturn {
   playbackState: AudioPlaybackState;
   currentRepetition: number;
   totalRepetitions: number;
+  waitDuration: number;
   play: (src: string) => Promise<void>;
   stop: () => void;
   isPlaying: boolean;
@@ -24,6 +25,7 @@ export function useAudioPlayer(options: UseAudioPlayerOptions = {}): UseAudioPla
 
   const [playbackState, setPlaybackState] = useState<AudioPlaybackState>('idle');
   const [currentRepetition, setCurrentRepetition] = useState(0);
+  const [waitDuration, setWaitDuration] = useState(0);
   const [userGestureRequired, setUserGestureRequired] = useState(false);
   const cancelledRef = useRef(false);
   const pendingSrcRef = useRef<string | null>(null);
@@ -51,13 +53,14 @@ export function useAudioPlayer(options: UseAudioPlayerOptions = {}): UseAudioPla
         if (cancelledRef.current) return;
 
         if (i < repetitions - 1) {
-          setPlaybackState('waiting');
+          let ms = 2000;
           try {
             const duration = await getAudioDuration(src);
-            await wait(duration * 2000);
-          } catch {
-            await wait(2000);
-          }
+            ms = duration * 2000;
+          } catch { /* fallback 2s */ }
+          setWaitDuration(ms);
+          setPlaybackState('waiting');
+          await wait(ms);
         }
       }
 
@@ -98,6 +101,7 @@ export function useAudioPlayer(options: UseAudioPlayerOptions = {}): UseAudioPla
     playbackState,
     currentRepetition,
     totalRepetitions: repetitions,
+    waitDuration,
     play,
     stop,
     isPlaying: playbackState === 'playing' || playbackState === 'waiting',
