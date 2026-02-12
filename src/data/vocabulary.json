@@ -4,120 +4,140 @@
       {
         "id": "apple",
         "spelling": "Apple",
+        "emoji": "🍎",
         "image": "assets/images/apple.svg",
         "audio": "assets/audio/word-apple.mp3"
       },
       {
         "id": "banana",
         "spelling": "Banana",
+        "emoji": "🍌",
         "image": "assets/images/banana.svg",
         "audio": "assets/audio/word-banana.mp3"
       },
       {
         "id": "carrot",
         "spelling": "Carrot",
+        "emoji": "🥕",
         "image": "assets/images/carrot.svg",
         "audio": "assets/audio/word-carrot.mp3"
       },
       {
         "id": "egg",
         "spelling": "Egg",
+        "emoji": "🥚",
         "image": "assets/images/egg.svg",
         "audio": "assets/audio/word-egg.mp3"
       },
       {
         "id": "fish",
         "spelling": "Fish",
+        "emoji": "🐟",
         "image": "assets/images/fish.svg",
         "audio": "assets/audio/word-fish.mp3"
       },
       {
         "id": "grape",
         "spelling": "Grape",
+        "emoji": "🍇",
         "image": "assets/images/grape.svg",
         "audio": "assets/audio/word-grape.mp3"
       },
       {
         "id": "milk",
         "spelling": "Milk",
+        "emoji": "🥛",
         "image": "assets/images/milk.svg",
         "audio": "assets/audio/word-milk.mp3"
       },
       {
         "id": "rice",
         "spelling": "Rice",
+        "emoji": "🍚",
         "image": "assets/images/rice.svg",
         "audio": "assets/audio/word-rice.mp3"
       },
       {
         "id": "tomato",
         "spelling": "Tomato",
+        "emoji": "🍅",
         "image": "assets/images/tomato.svg",
         "audio": "assets/audio/word-tomato.mp3"
       },
       {
         "id": "water",
         "spelling": "Water",
+        "emoji": "💧",
         "image": "assets/images/water.svg",
         "audio": "assets/audio/word-water.mp3"
       },
       {
         "id": "bread",
         "spelling": "Bread",
+        "emoji": "🍞",
         "image": "assets/images/bread.svg",
         "audio": "assets/audio/word-bread.mp3"
       },
       {
         "id": "cheese",
         "spelling": "Cheese",
+        "emoji": "🧀",
         "image": "assets/images/cheese.svg",
         "audio": "assets/audio/word-cheese.mp3"
       },
       {
         "id": "chicken",
         "spelling": "Chicken",
+        "emoji": "🍗",
         "image": "assets/images/chicken.svg",
         "audio": "assets/audio/word-chicken.mp3"
       },
       {
         "id": "corn",
         "spelling": "Corn",
+        "emoji": "🌽",
         "image": "assets/images/corn.svg",
         "audio": "assets/audio/word-corn.mp3"
       },
       {
         "id": "lemon",
         "spelling": "Lemon",
+        "emoji": "🍋",
         "image": "assets/images/lemon.svg",
         "audio": "assets/audio/word-lemon.mp3"
       },
       {
         "id": "meat",
         "spelling": "Meat",
+        "emoji": "🥩",
         "image": "assets/images/meat.svg",
         "audio": "assets/audio/word-meat.mp3"
       },
       {
         "id": "orange",
         "spelling": "Orange",
+        "emoji": "🍊",
         "image": "assets/images/orange.svg",
         "audio": "assets/audio/word-orange.mp3"
       },
       {
         "id": "potato",
         "spelling": "Potato",
+        "emoji": "🥔",
         "image": "assets/images/potato.svg",
         "audio": "assets/audio/word-potato.mp3"
       },
       {
         "id": "salt",
         "spelling": "Salt",
+        "emoji": "🧂",
         "image": "assets/images/salt.svg",
         "audio": "assets/audio/word-salt.mp3"
       },
       {
         "id": "sugar",
         "spelling": "Sugar",
+        "emoji": "🍬",
         "image": "assets/images/sugar.svg",
         "audio": "assets/audio/word-sugar.mp3"
       }
@@ -126,120 +146,140 @@
       {
         "id": "bowl",
         "spelling": "Bowl",
+        "emoji": "🥣",
         "image": "assets/images/bowl.svg",
         "audio": "assets/audio/word-bowl.mp3"
       },
       {
         "id": "cup",
         "spelling": "Cup",
+        "emoji": "☕",
         "image": "assets/images/cup.svg",
         "audio": "assets/audio/word-cup.mp3"
       },
       {
         "id": "fork",
         "spelling": "Fork",
+        "emoji": "🍴",
         "image": "assets/images/fork.svg",
         "audio": "assets/audio/word-fork.mp3"
       },
       {
         "id": "knife",
         "spelling": "Knife",
+        "emoji": "🔪",
         "image": "assets/images/knife.svg",
         "audio": "assets/audio/word-knife.mp3"
       },
       {
         "id": "plate",
         "spelling": "Plate",
+        "emoji": "🍽️",
         "image": "assets/images/plate.svg",
         "audio": "assets/audio/word-plate.mp3"
       },
       {
         "id": "pot",
         "spelling": "Pot",
+        "emoji": "🍲",
         "image": "assets/images/pot.svg",
         "audio": "assets/audio/word-pot.mp3"
       },
       {
         "id": "spoon",
         "spelling": "Spoon",
+        "emoji": "🥄",
         "image": "assets/images/spoon.svg",
         "audio": "assets/audio/word-spoon.mp3"
       },
       {
         "id": "stove",
         "spelling": "Stove",
+        "emoji": "🔥",
         "image": "assets/images/stove.svg",
         "audio": "assets/audio/word-stove.mp3"
       },
       {
         "id": "table",
         "spelling": "Table",
+        "emoji": "🪑",
         "image": "assets/images/table.svg",
         "audio": "assets/audio/word-table.mp3"
       },
       {
         "id": "chair",
         "spelling": "Chair",
+        "emoji": "💺",
         "image": "assets/images/chair.svg",
         "audio": "assets/audio/word-chair.mp3"
       },
       {
         "id": "chopsticks",
         "spelling": "Chopsticks",
+        "emoji": "🥢",
         "image": "assets/images/chopsticks.svg",
         "audio": "assets/audio/word-chopsticks.mp3"
       },
       {
         "id": "glass",
         "spelling": "Glass",
+        "emoji": "🥃",
         "image": "assets/images/glass.svg",
         "audio": "assets/audio/word-glass.mp3"
       },
       {
         "id": "kettle",
         "spelling": "Kettle",
+        "emoji": "🫖",
         "image": "assets/images/kettle.svg",
         "audio": "assets/audio/word-kettle.mp3"
       },
       {
         "id": "oven",
         "spelling": "Oven",
+        "emoji": "♨️",
         "image": "assets/images/oven.svg",
         "audio": "assets/audio/word-oven.mp3"
       },
       {
         "id": "pan",
         "spelling": "Pan",
+        "emoji": "🍳",
         "image": "assets/images/pan.svg",
         "audio": "assets/audio/word-pan.mp3"
       },
       {
         "id": "bottle",
         "spelling": "Bottle",
+        "emoji": "🍼",
         "image": "assets/images/bottle.svg",
         "audio": "assets/audio/word-bottle.mp3"
       },
       {
         "id": "napkin",
         "spelling": "Napkin",
+        "emoji": "🧻",
         "image": "assets/images/napkin.svg",
         "audio": "assets/audio/word-napkin.mp3"
       },
       {
         "id": "dish",
         "spelling": "Dish",
+        "emoji": "🍽️",
         "image": "assets/images/dish.svg",
         "audio": "assets/audio/word-dish.mp3"
       },
       {
         "id": "tray",
         "spelling": "Tray",
+        "emoji": "🗂️",
         "image": "assets/images/tray.svg",
         "audio": "assets/audio/word-tray.mp3"
       },
       {
         "id": "lid",
         "spelling": "Lid",
+        "emoji": "🫕",
         "image": "assets/images/lid.svg",
         "audio": "assets/audio/word-lid.mp3"
       }
@@ -248,120 +288,140 @@
       {
         "id": "cat",
         "spelling": "Cat",
+        "emoji": "🐱",
         "image": "assets/images/cat.svg",
         "audio": "assets/audio/word-cat.mp3"
       },
       {
         "id": "dog",
         "spelling": "Dog",
+        "emoji": "🐶",
         "image": "assets/images/dog.svg",
         "audio": "assets/audio/word-dog.mp3"
       },
       {
         "id": "bird",
         "spelling": "Bird",
+        "emoji": "🐦",
         "image": "assets/images/bird.svg",
         "audio": "assets/audio/word-bird.mp3"
       },
       {
         "id": "fish",
         "spelling": "Fish",
+        "emoji": "🐟",
         "image": "assets/images/fish.svg",
         "audio": "assets/audio/word-fish.mp3"
       },
       {
         "id": "lion",
         "spelling": "Lion",
+        "emoji": "🦁",
         "image": "assets/images/lion.svg",
         "audio": "assets/audio/word-lion.mp3"
       },
       {
         "id": "elephant",
         "spelling": "Elephant",
+        "emoji": "🐘",
         "image": "assets/images/elephant.svg",
         "audio": "assets/audio/word-elephant.mp3"
       },
       {
         "id": "rabbit",
         "spelling": "Rabbit",
+        "emoji": "🐰",
         "image": "assets/images/rabbit.svg",
         "audio": "assets/audio/word-rabbit.mp3"
       },
       {
         "id": "bear",
         "spelling": "Bear",
+        "emoji": "🐻",
         "image": "assets/images/bear.svg",
         "audio": "assets/audio/word-bear.mp3"
       },
       {
         "id": "monkey",
         "spelling": "Monkey",
+        "emoji": "🐵",
         "image": "assets/images/monkey.svg",
         "audio": "assets/audio/word-monkey.mp3"
       },
       {
         "id": "tiger",
         "spelling": "Tiger",
+        "emoji": "🐯",
         "image": "assets/images/tiger.svg",
         "audio": "assets/audio/word-tiger.mp3"
       },
       {
         "id": "cow",
         "spelling": "Cow",
+        "emoji": "🐄",
         "image": "assets/images/cow.svg",
         "audio": "assets/audio/word-cow.mp3"
       },
       {
         "id": "pig",
         "spelling": "Pig",
+        "emoji": "🐷",
         "image": "assets/images/pig.svg",
         "audio": "assets/audio/word-pig.mp3"
       },
       {
         "id": "sheep",
         "spelling": "Sheep",
+        "emoji": "🐑",
         "image": "assets/images/sheep.svg",
         "audio": "assets/audio/word-sheep.mp3"
       },
       {
         "id": "horse",
         "spelling": "Horse",
+        "emoji": "🐴",
         "image": "assets/images/horse.svg",
         "audio": "assets/audio/word-horse.mp3"
       },
       {
         "id": "duck",
         "spelling": "Duck",
+        "emoji": "🦆",
         "image": "assets/images/duck.svg",
         "audio": "assets/audio/word-duck.mp3"
       },
       {
         "id": "frog",
         "spelling": "Frog",
+        "emoji": "🐸",
         "image": "assets/images/frog.svg",
         "audio": "assets/audio/word-frog.mp3"
       },
       {
         "id": "giraffe",
         "spelling": "Giraffe",
+        "emoji": "🦒",
         "image": "assets/images/giraffe.svg",
         "audio": "assets/audio/word-giraffe.mp3"
       },
       {
         "id": "panda",
         "spelling": "Panda",
+        "emoji": "🐼",
         "image": "assets/images/panda.svg",
         "audio": "assets/audio/word-panda.mp3"
       },
       {
         "id": "fox",
         "spelling": "Fox",
+        "emoji": "🦊",
         "image": "assets/images/fox.svg",
         "audio": "assets/audio/word-fox.mp3"
       },
       {
         "id": "wolf",
         "spelling": "Wolf",
+        "emoji": "🐺",
         "image": "assets/images/wolf.svg",
         "audio": "assets/audio/word-wolf.mp3"
       }
@@ -370,120 +430,140 @@
       {
         "id": "car",
         "spelling": "Car",
+        "emoji": "🚗",
         "image": "assets/images/car.svg",
         "audio": "assets/audio/word-car.mp3"
       },
       {
         "id": "bus",
         "spelling": "Bus",
+        "emoji": "🚌",
         "image": "assets/images/bus.svg",
         "audio": "assets/audio/word-bus.mp3"
       },
       {
         "id": "train",
         "spelling": "Train",
+        "emoji": "🚂",
         "image": "assets/images/train.svg",
         "audio": "assets/audio/word-train.mp3"
       },
       {
         "id": "airplane",
         "spelling": "Airplane",
+        "emoji": "✈️",
         "image": "assets/images/airplane.svg",
         "audio": "assets/audio/word-airplane.mp3"
       },
       {
         "id": "bike",
         "spelling": "Bike",
+        "emoji": "🚲",
         "image": "assets/images/bike.svg",
         "audio": "assets/audio/word-bike.mp3"
       },
       {
         "id": "boat",
         "spelling": "Boat",
+        "emoji": "⛵",
         "image": "assets/images/boat.svg",
         "audio": "assets/audio/word-boat.mp3"
       },
       {
         "id": "truck",
         "spelling": "Truck",
+        "emoji": "🚛",
         "image": "assets/images/truck.svg",
         "audio": "assets/audio/word-truck.mp3"
       },
       {
         "id": "taxi",
         "spelling": "Taxi",
+        "emoji": "🚕",
         "image": "assets/images/taxi.svg",
         "audio": "assets/audio/word-taxi.mp3"
       },
       {
         "id": "ship",
         "spelling": "Ship",
+        "emoji": "🚢",
         "image": "assets/images/ship.svg",
         "audio": "assets/audio/word-ship.mp3"
       },
       {
         "id": "helicopter",
         "spelling": "Helicopter",
+        "emoji": "🚁",
         "image": "assets/images/helicopter.svg",
         "audio": "assets/audio/word-helicopter.mp3"
       },
       {
         "id": "motorcycle",
         "spelling": "Motorcycle",
+        "emoji": "🏍️",
         "image": "assets/images/motorcycle.svg",
         "audio": "assets/audio/word-motorcycle.mp3"
       },
       {
         "id": "subway",
         "spelling": "Subway",
+        "emoji": "🚇",
         "image": "assets/images/subway.svg",
         "audio": "assets/audio/word-subway.mp3"
       },
       {
         "id": "scooter",
         "spelling": "Scooter",
+        "emoji": "🛴",
         "image": "assets/images/scooter.svg",
         "audio": "assets/audio/word-scooter.mp3"
       },
       {
         "id": "rocket",
         "spelling": "Rocket",
+        "emoji": "🚀",
         "image": "assets/images/rocket.svg",
         "audio": "assets/audio/word-rocket.mp3"
       },
       {
         "id": "ambulance",
         "spelling": "Ambulance",
+        "emoji": "🚑",
         "image": "assets/images/ambulance.svg",
         "audio": "assets/audio/word-ambulance.mp3"
       },
       {
         "id": "van",
         "spelling": "Van",
+        "emoji": "🚐",
         "image": "assets/images/van.svg",
         "audio": "assets/audio/word-van.mp3"
       },
       {
         "id": "police-car",
         "spelling": "Police car",
+        "emoji": "🚓",
         "image": "assets/images/police-car.svg",
         "audio": "assets/audio/word-police-car.mp3"
       },
       {
         "id": "fire-truck",
         "spelling": "Fire truck",
+        "emoji": "🚒",
         "image": "assets/images/fire-truck.svg",
         "audio": "assets/audio/word-fire-truck.mp3"
       },
       {
         "id": "tram",
         "spelling": "Tram",
+        "emoji": "🚊",
         "image": "assets/images/tram.svg",
         "audio": "assets/audio/word-tram.mp3"
       },
       {
         "id": "yacht",
         "spelling": "Yacht",
+        "emoji": "🛥️",
         "image": "assets/images/yacht.svg",
         "audio": "assets/audio/word-yacht.mp3"
       }
@@ -492,120 +572,140 @@
       {
         "id": "head",
         "spelling": "Head",
+        "emoji": "🗣️",
         "image": "assets/images/head.svg",
         "audio": "assets/audio/word-head.mp3"
       },
       {
         "id": "eye",
         "spelling": "Eye",
+        "emoji": "👁️",
         "image": "assets/images/eye.svg",
         "audio": "assets/audio/word-eye.mp3"
       },
       {
         "id": "ear",
         "spelling": "Ear",
+        "emoji": "👂",
         "image": "assets/images/ear.svg",
         "audio": "assets/audio/word-ear.mp3"
       },
       {
         "id": "nose",
         "spelling": "Nose",
+        "emoji": "👃",
         "image": "assets/images/nose.svg",
         "audio": "assets/audio/word-nose.mp3"
       },
       {
         "id": "mouth",
         "spelling": "Mouth",
+        "emoji": "👄",
         "image": "assets/images/mouth.svg",
         "audio": "assets/audio/word-mouth.mp3"
       },
       {
         "id": "hand",
         "spelling": "Hand",
+        "emoji": "✋",
         "image": "assets/images/hand.svg",
         "audio": "assets/audio/word-hand.mp3"
       },
       {
         "id": "foot",
         "spelling": "Foot",
+        "emoji": "🦶",
         "image": "assets/images/foot.svg",
         "audio": "assets/audio/word-foot.mp3"
       },
       {
         "id": "arm",
         "spelling": "Arm",
+        "emoji": "💪",
         "image": "assets/images/arm.svg",
         "audio": "assets/audio/word-arm.mp3"
       },
       {
         "id": "leg",
         "spelling": "Leg",
+        "emoji": "🦵",
         "image": "assets/images/leg.svg",
         "audio": "assets/audio/word-leg.mp3"
       },
       {
         "id": "hair",
         "spelling": "Hair",
+        "emoji": "💇",
         "image": "assets/images/hair.svg",
         "audio": "assets/audio/word-hair.mp3"
       },
       {
         "id": "finger",
         "spelling": "Finger",
+        "emoji": "👆",
         "image": "assets/images/finger.svg",
         "audio": "assets/audio/word-finger.mp3"
       },
       {
         "id": "toe",
         "spelling": "Toe",
+        "emoji": "🦶",
         "image": "assets/images/toe.svg",
         "audio": "assets/audio/word-toe.mp3"
       },
       {
         "id": "knee",
         "spelling": "Knee",
+        "emoji": "🦵",
         "image": "assets/images/knee.svg",
         "audio": "assets/audio/word-knee.mp3"
       },
       {
         "id": "elbow",
         "spelling": "Elbow",
+        "emoji": "💪",
         "image": "assets/images/elbow.svg",
         "audio": "assets/audio/word-elbow.mp3"
       },
       {
         "id": "shoulder",
         "spelling": "Shoulder",
+        "emoji": "🤷",
         "image": "assets/images/shoulder.svg",
         "audio": "assets/audio/word-shoulder.mp3"
       },
       {
         "id": "neck",
         "spelling": "Neck",
+        "emoji": "🦒",
         "image": "assets/images/neck.svg",
         "audio": "assets/audio/word-neck.mp3"
       },
       {
         "id": "back",
         "spelling": "Back",
+        "emoji": "🔙",
         "image": "assets/images/back.svg",
         "audio": "assets/audio/word-back.mp3"
       },
       {
         "id": "chest",
         "spelling": "Chest",
+        "emoji": "🫁",
         "image": "assets/images/chest.svg",
         "audio": "assets/audio/word-chest.mp3"
       },
       {
         "id": "stomach",
         "spelling": "Stomach",
+        "emoji": "🤰",
         "image": "assets/images/stomach.svg",
         "audio": "assets/audio/word-stomach.mp3"
       },
       {
         "id": "face",
         "spelling": "Face",
+        "emoji": "😊",
         "image": "assets/images/face.svg",
         "audio": "assets/audio/word-face.mp3"
       }

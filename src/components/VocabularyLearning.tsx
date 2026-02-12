@@ -171,13 +171,9 @@ export default function VocabularyLearning() {
               isAnimating ? 'opacity-50 scale-95' : 'opacity-100 scale-100'
             }`}
           >
-            {/* Image */}
-            <div className={`w-48 h-48 md:w-56 md:h-56 rounded-3xl ${categoryBgMap[vocabCategory]} flex items-center justify-center mb-6 shadow-md overflow-hidden`}>
-              <img
-                src={current.image}
-                alt={current.spelling}
-                className="w-40 h-40 md:w-48 md:h-48 object-contain"
-              />
+            {/* Emoji */}
+            <div className={`w-48 h-48 md:w-56 md:h-56 rounded-3xl ${categoryBgMap[vocabCategory]} flex items-center justify-center mb-6 shadow-md`}>
+              <span className="text-8xl md:text-9xl">{current.emoji}</span>
             </div>
 
             {/* Word */}

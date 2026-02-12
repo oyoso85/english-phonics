@@ -4,6 +4,7 @@
     "uppercase": "A",
     "lowercase": "a",
     "exampleWord": "Apple",
+    "emoji": "🍎",
     "exampleImage": "assets/images/apple.svg",
     "audioFile": "assets/audio/alphabet-a.mp3"
   },
@@ -12,6 +13,7 @@
     "uppercase": "B",
     "lowercase": "b",
     "exampleWord": "Ball",
+    "emoji": "⚽",
     "exampleImage": "assets/images/ball.svg",
     "audioFile": "assets/audio/alphabet-b.mp3"
   },
@@ -20,6 +22,7 @@
     "uppercase": "C",
     "lowercase": "c",
     "exampleWord": "Cat",
+    "emoji": "🐱",
     "exampleImage": "assets/images/cat.svg",
     "audioFile": "assets/audio/alphabet-c.mp3"
   },
@@ -28,6 +31,7 @@
     "uppercase": "D",
     "lowercase": "d",
     "exampleWord": "Dog",
+    "emoji": "🐶",
     "exampleImage": "assets/images/dog.svg",
     "audioFile": "assets/audio/alphabet-d.mp3"
   },
@@ -36,6 +40,7 @@
     "uppercase": "E",
     "lowercase": "e",
     "exampleWord": "Elephant",
+    "emoji": "🐘",
     "exampleImage": "assets/images/elephant.svg",
     "audioFile": "assets/audio/alphabet-e.mp3"
   },
@@ -44,6 +49,7 @@
     "uppercase": "F",
     "lowercase": "f",
     "exampleWord": "Fish",
+    "emoji": "🐟",
     "exampleImage": "assets/images/fish.svg",
     "audioFile": "assets/audio/alphabet-f.mp3"
   },
@@ -52,6 +58,7 @@
     "uppercase": "G",
     "lowercase": "g",
     "exampleWord": "Grape",
+    "emoji": "🍇",
     "exampleImage": "assets/images/grape.svg",
     "audioFile": "assets/audio/alphabet-g.mp3"
   },
@@ -60,6 +67,7 @@
     "uppercase": "H",
     "lowercase": "h",
     "exampleWord": "Hat",
+    "emoji": "🎩",
     "exampleImage": "assets/images/hat.svg",
     "audioFile": "assets/audio/alphabet-h.mp3"
   },
@@ -68,6 +76,7 @@
     "uppercase": "I",
     "lowercase": "i",
     "exampleWord": "Ice cream",
+    "emoji": "🍦",
     "exampleImage": "assets/images/ice-cream.svg",
     "audioFile": "assets/audio/alphabet-i.mp3"
   },
@@ -76,6 +85,7 @@
     "uppercase": "J",
     "lowercase": "j",
     "exampleWord": "Juice",
+    "emoji": "🧃",
     "exampleImage": "assets/images/juice.svg",
     "audioFile": "assets/audio/alphabet-j.mp3"
   },
@@ -84,6 +94,7 @@
     "uppercase": "K",
     "lowercase": "k",
     "exampleWord": "Kite",
+    "emoji": "🪁",
     "exampleImage": "assets/images/kite.svg",
     "audioFile": "assets/audio/alphabet-k.mp3"
   },
@@ -92,6 +103,7 @@
     "uppercase": "L",
     "lowercase": "l",
     "exampleWord": "Lion",
+    "emoji": "🦁",
     "exampleImage": "assets/images/lion.svg",
     "audioFile": "assets/audio/alphabet-l.mp3"
   },
@@ -100,6 +112,7 @@
     "uppercase": "M",
     "lowercase": "m",
     "exampleWord": "Monkey",
+    "emoji": "🐵",
     "exampleImage": "assets/images/monkey.svg",
     "audioFile": "assets/audio/alphabet-m.mp3"
   },
@@ -108,6 +121,7 @@
     "uppercase": "N",
     "lowercase": "n",
     "exampleWord": "Nose",
+    "emoji": "👃",
     "exampleImage": "assets/images/nose.svg",
     "audioFile": "assets/audio/alphabet-n.mp3"
   },
@@ -116,6 +130,7 @@
     "uppercase": "O",
     "lowercase": "o",
     "exampleWord": "Orange",
+    "emoji": "🍊",
     "exampleImage": "assets/images/orange.svg",
     "audioFile": "assets/audio/alphabet-o.mp3"
   },
@@ -124,6 +139,7 @@
     "uppercase": "P",
     "lowercase": "p",
     "exampleWord": "Pig",
+    "emoji": "🐷",
     "exampleImage": "assets/images/pig.svg",
     "audioFile": "assets/audio/alphabet-p.mp3"
   },
@@ -132,6 +148,7 @@
     "uppercase": "Q",
     "lowercase": "q",
     "exampleWord": "Queen",
+    "emoji": "👸",
     "exampleImage": "assets/images/queen.svg",
     "audioFile": "assets/audio/alphabet-q.mp3"
   },
@@ -140,6 +157,7 @@
     "uppercase": "R",
     "lowercase": "r",
     "exampleWord": "Rabbit",
+    "emoji": "🐰",
     "exampleImage": "assets/images/rabbit.svg",
     "audioFile": "assets/audio/alphabet-r.mp3"
   },
@@ -148,6 +166,7 @@
     "uppercase": "S",
     "lowercase": "s",
     "exampleWord": "Sun",
+    "emoji": "☀️",
     "exampleImage": "assets/images/sun.svg",
     "audioFile": "assets/audio/alphabet-s.mp3"
   },
@@ -156,6 +175,7 @@
     "uppercase": "T",
     "lowercase": "t",
     "exampleWord": "Tiger",
+    "emoji": "🐯",
     "exampleImage": "assets/images/tiger.svg",
     "audioFile": "assets/audio/alphabet-t.mp3"
   },
@@ -164,6 +184,7 @@
     "uppercase": "U",
     "lowercase": "u",
     "exampleWord": "Umbrella",
+    "emoji": "☂️",
     "exampleImage": "assets/images/umbrella.svg",
     "audioFile": "assets/audio/alphabet-u.mp3"
   },
@@ -172,6 +193,7 @@
     "uppercase": "V",
     "lowercase": "v",
     "exampleWord": "Van",
+    "emoji": "🚐",
     "exampleImage": "assets/images/van.svg",
     "audioFile": "assets/audio/alphabet-v.mp3"
   },
@@ -180,6 +202,7 @@
     "uppercase": "W",
     "lowercase": "w",
     "exampleWord": "Water",
+    "emoji": "💧",
     "exampleImage": "assets/images/water.svg",
     "audioFile": "assets/audio/alphabet-w.mp3"
   },
@@ -188,6 +211,7 @@
     "uppercase": "X",
     "lowercase": "x",
     "exampleWord": "Xylophone",
+    "emoji": "🎵",
     "exampleImage": "assets/images/xylophone.svg",
     "audioFile": "assets/audio/alphabet-x.mp3"
   },
@@ -196,6 +220,7 @@
     "uppercase": "Y",
     "lowercase": "y",
     "exampleWord": "Yellow",
+    "emoji": "💛",
     "exampleImage": "assets/images/yellow.svg",
     "audioFile": "assets/audio/alphabet-y.mp3"
   },
@@ -204,6 +229,7 @@
     "uppercase": "Z",
     "lowercase": "z",
     "exampleWord": "Zebra",
+    "emoji": "🦓",
     "exampleImage": "assets/images/zebra.svg",
     "audioFile": "assets/audio/alphabet-z.mp3"
   }

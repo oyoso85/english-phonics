@@ -4,6 +4,7 @@ export interface AlphabetData {
   uppercase: string;
   lowercase: string;
   exampleWord: string;
+  emoji: string;
   exampleImage: string;
   audioFile: string;
 }
@@ -12,6 +13,7 @@ export interface AlphabetData {
 export interface VocabularyWord {
   id: string;
   spelling: string;
+  emoji: string;
   image: string;
   audio: string;
 }

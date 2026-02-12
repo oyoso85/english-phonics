@@ -137,13 +137,9 @@ export default function AlphabetLearning() {
               <span className="text-8xl font-bold text-primary/50">{current.lowercase}</span>
             </div>
 
-            {/* Image */}
-            <div className="w-40 h-40 md:w-48 md:h-48 rounded-3xl bg-cat-blue flex items-center justify-center mb-4 shadow-md overflow-hidden">
-              <img
-                src={current.exampleImage}
-                alt={current.exampleWord}
-                className="w-32 h-32 md:w-40 md:h-40 object-contain"
-              />
+            {/* Emoji */}
+            <div className="w-40 h-40 md:w-48 md:h-48 rounded-3xl bg-cat-blue flex items-center justify-center mb-4 shadow-md">
+              <span className="text-7xl md:text-8xl">{current.emoji}</span>
             </div>
 
             {/* Word */}
