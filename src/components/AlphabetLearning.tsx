@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { ChevronLeft, ChevronRight, Volume2, ArrowLeft, RotateCcw, Home } from 'lucide-react';
 import { loadAlphabets } from '../utils/data';
 import { useAudioPlayer } from '../hooks/useAudioPlayer';
@@ -8,8 +8,10 @@ import AudioGesturePrompt from './AudioGesturePrompt';
 
 export default function AlphabetLearning() {
   const navigate = useNavigate();
+  const location = useLocation();
   const alphabets = loadAlphabets();
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const startIndex = (location.state as { startIndex?: number })?.startIndex ?? 0;
+  const [currentIndex, setCurrentIndex] = useState(startIndex);
   const [isAnimating, setIsAnimating] = useState(false);
   const current = alphabets[currentIndex];
 
@@ -63,7 +65,7 @@ export default function AlphabetLearning() {
               다시 배우기
             </button>
             <button
-              onClick={() => navigate('/select-category')}
+              onClick={() => navigate('/alphabet-cards')}
               className="flex-1 flex items-center justify-center gap-2 py-4 bg-muted hover:bg-muted/80 text-foreground font-bold rounded-2xl transition-all hover:scale-105 active:scale-95"
             >
               <Home className="w-5 h-5" />
@@ -82,7 +84,7 @@ export default function AlphabetLearning() {
       {/* Header */}
       <div className="flex items-center justify-between w-full max-w-2xl mb-4">
         <button
-          onClick={() => { stop(); navigate('/select-category'); }}
+          onClick={() => { stop(); navigate('/alphabet-cards'); }}
           className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors px-4 py-3 rounded-2xl hover:bg-muted active:scale-95"
         >
           <ArrowLeft className="w-5 h-5" />

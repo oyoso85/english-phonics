@@ -18,7 +18,7 @@ export default function CategorySelection() {
     if (category === 'vocabulary') {
       navigate('/vocabulary-categories');
     } else if (category === 'alphabet') {
-      navigate('/alphabet');
+      navigate('/alphabet-cards');
     } else {
       navigate('/conversation');
     }
