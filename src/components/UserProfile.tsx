@@ -13,12 +13,12 @@ export default function UserProfile() {
   };
 
   return (
-    <div className="flex items-center gap-2 px-4 py-2">
+    <div className="flex items-center gap-2 px-4 py-2 bg-card rounded-full shadow-sm border border-muted">
       <span className="text-lg">😊</span>
-      <span className="font-medium text-purple-700">{state.user.nickname}</span>
+      <span className="font-semibold text-foreground">{state.user.nickname}</span>
       <button
         onClick={handleChangeName}
-        className="text-xs text-gray-400 hover:text-gray-600 ml-1"
+        className="text-xs text-muted-foreground hover:text-primary transition-colors ml-1"
       >
         변경
       </button>

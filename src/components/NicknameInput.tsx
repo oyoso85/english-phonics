@@ -29,12 +29,12 @@ export default function NicknameInput() {
 
   return (
     <div className="flex items-center justify-center min-h-screen p-4">
-      <div className="bg-white rounded-3xl shadow-xl p-8 w-full max-w-md text-center">
-        <div className="text-6xl mb-4">👋</div>
-        <h1 className="text-3xl font-bold text-purple-700 mb-2">
+      <div className="bg-card rounded-3xl shadow-2xl p-8 w-full max-w-md text-center animate-bounce-in animate-fill-both">
+        <div className="text-6xl mb-4 animate-wiggle">👋</div>
+        <h1 className="text-3xl font-bold text-primary mb-2">
           Hello!
         </h1>
-        <p className="text-gray-500 mb-6">이름을 알려주세요</p>
+        <p className="text-muted-foreground mb-6">이름을 알려주세요</p>
 
         <form onSubmit={handleSubmit}>
           <input
@@ -46,15 +46,15 @@ export default function NicknameInput() {
             }}
             placeholder="이름을 입력하세요"
             maxLength={20}
-            className="w-full px-6 py-4 text-xl text-center border-2 border-purple-200 rounded-2xl focus:border-purple-500 focus:outline-none mb-2"
+            className="w-full px-6 py-4 text-xl text-center border-2 border-muted rounded-2xl focus:border-primary focus:ring-4 focus:ring-primary/20 focus:outline-none transition-all bg-background mb-2"
             autoFocus
           />
           {error && (
-            <p className="text-red-400 text-sm mb-2">{error}</p>
+            <p className="text-destructive text-sm mb-2">{error}</p>
           )}
           <button
             type="submit"
-            className="w-full mt-4 py-4 bg-purple-500 hover:bg-purple-600 text-white text-xl font-bold rounded-2xl transition-colors active:scale-95"
+            className="w-full mt-4 py-4 bg-primary hover:bg-primary/90 text-primary-foreground text-xl font-bold rounded-2xl transition-all hover:scale-105 active:scale-95 shadow-lg"
           >
             시작하기
           </button>

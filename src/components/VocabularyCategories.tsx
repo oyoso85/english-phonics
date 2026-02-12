@@ -1,14 +1,15 @@
 import { useNavigate } from 'react-router-dom';
 import { useAppContext } from '../context/AppContext';
+import { ArrowLeft } from 'lucide-react';
 import type { VocabularyCategory } from '../types';
 import { getVocabularyCategoryLabel } from '../utils/data';
 
-const vocabCategories: { id: VocabularyCategory; icon: string; color: string }[] = [
-  { id: 'food-ingredients', icon: '🍎', color: 'from-red-400 to-red-500' },
-  { id: 'cooking', icon: '🍳', color: 'from-yellow-400 to-yellow-500' },
-  { id: 'animals', icon: '🐶', color: 'from-green-400 to-green-500' },
-  { id: 'vehicles', icon: '🚗', color: 'from-blue-400 to-blue-500' },
-  { id: 'body-parts', icon: '🖐️', color: 'from-purple-400 to-purple-500' },
+const vocabCategories: { id: VocabularyCategory; icon: string; bgColor: string; textColor: string }[] = [
+  { id: 'food-ingredients', icon: '🍎', bgColor: 'bg-cat-red', textColor: 'text-red-600' },
+  { id: 'cooking', icon: '🍳', bgColor: 'bg-cat-yellow', textColor: 'text-yellow-600' },
+  { id: 'animals', icon: '🐶', bgColor: 'bg-cat-green', textColor: 'text-green-600' },
+  { id: 'vehicles', icon: '🚗', bgColor: 'bg-cat-blue', textColor: 'text-blue-600' },
+  { id: 'body-parts', icon: '🖐️', bgColor: 'bg-cat-purple', textColor: 'text-purple-600' },
 ];
 
 export default function VocabularyCategories() {
@@ -21,30 +22,35 @@ export default function VocabularyCategories() {
   };
 
   return (
-    <div className="min-h-screen p-4">
-      <div className="max-w-md mx-auto">
-        <div className="flex items-center gap-3 mb-6">
-          <button
-            onClick={() => navigate('/select-category')}
-            className="p-2 rounded-xl bg-white/80 hover:bg-white shadow-sm text-purple-600 text-xl"
-          >
-            &#8592;
-          </button>
-          <h1 className="text-2xl font-bold text-purple-700">단어 카테고리</h1>
-        </div>
+    <div className="flex flex-col items-center min-h-screen px-6 py-8">
+      <div className="flex items-center justify-between w-full max-w-2xl mb-8">
+        <button
+          onClick={() => navigate('/select-category')}
+          className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors px-4 py-3 rounded-2xl hover:bg-muted active:scale-95"
+        >
+          <ArrowLeft className="w-5 h-5" />
+          <span className="text-lg font-medium">돌아가기</span>
+        </button>
+        <h1 className="text-2xl font-bold text-foreground">단어 카테고리</h1>
+        <div className="w-24" />
+      </div>
 
-        <div className="flex flex-col gap-3">
-          {vocabCategories.map((cat) => (
-            <button
-              key={cat.id}
-              onClick={() => handleSelect(cat.id)}
-              className={`flex items-center gap-4 p-5 bg-gradient-to-r ${cat.color} text-white rounded-2xl shadow-lg hover:shadow-xl transition-all active:scale-95`}
-            >
-              <span className="text-3xl">{cat.icon}</span>
-              <span className="text-xl font-bold">{getVocabularyCategoryLabel(cat.id)}</span>
-            </button>
-          ))}
-        </div>
+      <div className="grid grid-cols-2 gap-5 w-full max-w-2xl">
+        {vocabCategories.map((cat, index) => (
+          <button
+            key={cat.id}
+            onClick={() => handleSelect(cat.id)}
+            className={`group flex flex-col items-center justify-center ${cat.bgColor} rounded-3xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 animate-bounce-in animate-fill-both`}
+            style={{ animationDelay: `${index * 100}ms` }}
+          >
+            <span className="text-4xl mb-3 group-hover:animate-float transition-transform">
+              {cat.icon}
+            </span>
+            <span className={`text-lg font-bold ${cat.textColor}`}>
+              {getVocabularyCategoryLabel(cat.id)}
+            </span>
+          </button>
+        ))}
       </div>
     </div>
   );

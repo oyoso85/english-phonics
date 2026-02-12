@@ -3,10 +3,10 @@ import { useAppContext } from '../context/AppContext';
 import UserProfile from './UserProfile';
 import type { LearningCategory } from '../types';
 
-const categories: { id: LearningCategory; label: string; icon: string; color: string }[] = [
-  { id: 'alphabet', label: 'ABC 알파벳', icon: '🔤', color: 'from-blue-400 to-blue-500' },
-  { id: 'vocabulary', label: '단어 학습', icon: '📚', color: 'from-green-400 to-green-500' },
-  { id: 'conversation', label: '대화 학습', icon: '💬', color: 'from-orange-400 to-orange-500' },
+const categories: { id: LearningCategory; label: string; icon: string; bgColor: string; textColor: string }[] = [
+  { id: 'alphabet', label: 'ABC 알파벳', icon: '🔤', bgColor: 'bg-cat-blue', textColor: 'text-blue-600' },
+  { id: 'vocabulary', label: '단어 학습', icon: '📚', bgColor: 'bg-cat-green', textColor: 'text-green-600' },
+  { id: 'conversation', label: '대화 학습', icon: '💬', bgColor: 'bg-cat-orange', textColor: 'text-orange-600' },
 ];
 
 export default function CategorySelection() {
@@ -25,25 +25,34 @@ export default function CategorySelection() {
   };
 
   return (
-    <div className="min-h-screen p-4">
-      <div className="max-w-md mx-auto">
-        <div className="flex justify-between items-center mb-6">
-          <h1 className="text-2xl font-bold text-purple-700">무엇을 배울까요?</h1>
-          <UserProfile />
-        </div>
+    <div className="flex flex-col items-center justify-center min-h-screen px-6 py-8">
+      <div className="text-center mb-10">
+        <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-3 animate-bounce-in animate-fill-both">
+          English Phonics
+        </h1>
+        <p className="text-xl text-muted-foreground">어떤 것을 배울까요?</p>
+      </div>
 
-        <div className="flex flex-col gap-4">
-          {categories.map((cat) => (
-            <button
-              key={cat.id}
-              onClick={() => handleSelect(cat.id)}
-              className={`flex items-center gap-4 p-6 bg-gradient-to-r ${cat.color} text-white rounded-2xl shadow-lg hover:shadow-xl transition-all active:scale-95`}
-            >
-              <span className="text-4xl">{cat.icon}</span>
-              <span className="text-2xl font-bold">{cat.label}</span>
-            </button>
-          ))}
-        </div>
+      <div className="flex justify-center mb-6">
+        <UserProfile />
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 w-full max-w-2xl">
+        {categories.map((cat, index) => (
+          <button
+            key={cat.id}
+            onClick={() => handleSelect(cat.id)}
+            className={`group flex flex-col items-center justify-center ${cat.bgColor} rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 animate-bounce-in animate-fill-both`}
+            style={{ animationDelay: `${index * 100}ms` }}
+          >
+            <span className="text-5xl mb-3 group-hover:animate-float transition-transform">
+              {cat.icon}
+            </span>
+            <span className={`text-xl font-bold ${cat.textColor}`}>
+              {cat.label}
+            </span>
+          </button>
+        ))}
       </div>
     </div>
   );

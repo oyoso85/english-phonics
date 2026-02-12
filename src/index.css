@@ -2,19 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@layer base {
+  :root {
+    --background: 40 100% 97%;
+    --foreground: 240 10% 20%;
 
-  color-scheme: light;
-  color: rgba(0, 0, 0, 0.87);
-  background-color: #ffffff;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 20%;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 100% 56%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 240 5% 96%;
+    --muted-foreground: 240 4% 46%;
+
+    --accent: 45 100% 60%;
+    --accent-foreground: 45 100% 20%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color-scheme: light;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 }
 
 body {
@@ -22,40 +41,12 @@ body {
   display: flex;
   min-width: 320px;
   min-height: 100vh;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
 }
 
 #root {
   width: 100%;
-}
-
-/* 페이지 전환 애니메이션 */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(12px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes popIn {
-  0% { transform: scale(0.8); opacity: 0; }
-  70% { transform: scale(1.05); }
-  100% { transform: scale(1); opacity: 1; }
-}
-
-@keyframes celebrate {
-  0%, 100% { transform: scale(1) rotate(0deg); }
-  25% { transform: scale(1.1) rotate(-5deg); }
-  75% { transform: scale(1.1) rotate(5deg); }
-}
-
-.animate-fade-in {
-  animation: fadeIn 0.3s ease-out;
-}
-
-.animate-pop-in {
-  animation: popIn 0.4s ease-out;
-}
-
-.animate-celebrate {
-  animation: celebrate 0.6s ease-in-out;
 }
 
 /* 터치 친화적 */
@@ -68,6 +59,14 @@ button {
 /* 접근성: 포커스 표시 */
 button:focus-visible,
 input:focus-visible {
-  outline: 3px solid #a855f7;
+  outline: 3px solid hsl(var(--primary));
   outline-offset: 2px;
 }
+
+/* 스태거드 애니메이션 딜레이 */
+.animate-delay-100 { animation-delay: 100ms; }
+.animate-delay-200 { animation-delay: 200ms; }
+.animate-delay-300 { animation-delay: 300ms; }
+.animate-delay-400 { animation-delay: 400ms; }
+.animate-delay-500 { animation-delay: 500ms; }
+.animate-fill-both { animation-fill-mode: both; }

@@ -6,7 +6,7 @@ function App() {
   return (
     <AppProvider>
       <BrowserRouter basename={import.meta.env.BASE_URL}>
-        <div className="min-h-screen bg-gradient-to-b from-blue-100 to-purple-100">
+        <div className="min-h-screen bg-background font-sans">
           <AppRoutes />
         </div>
       </BrowserRouter>

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { ArrowLeft, Volume2, ChevronRight, Home, MessageCircle } from 'lucide-react';
 import { loadConversations } from '../utils/data';
 import { useAudioPlayer } from '../hooks/useAudioPlayer';
 import AudioIndicator from './AudioIndicator';
@@ -19,7 +20,6 @@ export default function ConversationLearning() {
     useAudioPlayer({
       repetitions: 1,
       onComplete: () => {
-        // Auto-advance to next sentence after delay
         if (sentenceIndex < currentSet.sentences.length - 1) {
           setTimeout(() => {
             setSentenceIndex((prev) => prev + 1);
@@ -55,14 +55,15 @@ export default function ConversationLearning() {
   if (isAllFinished) {
     return (
       <div className="flex items-center justify-center min-h-screen p-4">
-        <div className="bg-white rounded-3xl shadow-xl p-8 text-center max-w-md">
-          <div className="text-6xl mb-4">🎊</div>
-          <h2 className="text-2xl font-bold text-purple-700 mb-2">대단해요!</h2>
-          <p className="text-gray-500 mb-6">모든 대화를 배웠어요!</p>
+        <div className="bg-card rounded-3xl shadow-2xl p-8 md:p-12 text-center max-w-md w-full animate-bounce-in animate-fill-both">
+          <div className="text-6xl mb-6 animate-star-burst">🎊</div>
+          <h2 className="text-3xl font-bold text-foreground mb-2">대단해요!</h2>
+          <p className="text-muted-foreground mb-8">모든 대화를 배웠어요!</p>
           <button
             onClick={() => navigate('/select-category')}
-            className="w-full py-3 px-6 bg-purple-500 hover:bg-purple-600 text-white font-bold rounded-2xl"
+            className="w-full flex items-center justify-center gap-2 py-4 bg-primary hover:bg-primary/90 text-primary-foreground font-bold rounded-2xl transition-all hover:scale-105 active:scale-95"
           >
+            <Home className="w-5 h-5" />
             홈으로
           </button>
         </div>
@@ -71,26 +72,42 @@ export default function ConversationLearning() {
   }
 
   return (
-    <div className="min-h-screen p-4">
+    <div className="flex flex-col items-center min-h-screen px-4 py-6">
       {userGestureRequired && <AudioGesturePrompt onActivate={enableAudio} />}
-      <div className="max-w-md mx-auto">
-        <div className="flex items-center justify-between mb-4">
-          <button
-            onClick={() => { stop(); navigate('/select-category'); }}
-            className="p-2 rounded-xl bg-white/80 hover:bg-white shadow-sm text-purple-600 text-xl"
-          >
-            &#8592;
-          </button>
-          <span className="text-sm font-medium text-gray-500">
-            대화 {setIndex + 1} / {conversations.length}
-          </span>
-        </div>
 
-        <div className="bg-white rounded-3xl shadow-xl p-6">
-          <h2 className="text-xl font-bold text-purple-700 mb-1 text-center">
-            💬 {currentSet.title}
+      {/* Header */}
+      <div className="flex items-center justify-between w-full max-w-2xl mb-4">
+        <button
+          onClick={() => { stop(); navigate('/select-category'); }}
+          className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors px-4 py-3 rounded-2xl hover:bg-muted active:scale-95"
+        >
+          <ArrowLeft className="w-5 h-5" />
+          <span className="text-lg font-medium">돌아가기</span>
+        </button>
+        <span className="text-lg font-medium px-4 py-2 rounded-full bg-cat-orange text-orange-600">
+          <MessageCircle className="w-4 h-4 inline mr-1" />
+          대화
+        </span>
+        <span className="text-lg font-medium text-muted-foreground px-4 py-2">
+          {setIndex + 1}/{conversations.length}
+        </span>
+      </div>
+
+      {/* Progress Bar */}
+      <div className="w-full max-w-2xl h-2 bg-muted rounded-full mb-6 overflow-hidden">
+        <div
+          className="h-full rounded-full transition-all duration-500 ease-out bg-orange-500"
+          style={{ width: `${((sentenceIndex + 1) / (currentSet?.sentences.length ?? 1)) * 100}%` }}
+        />
+      </div>
+
+      {/* Main Card */}
+      <div className="w-full max-w-2xl">
+        <div className="bg-card rounded-3xl shadow-xl p-6 animate-fade-in">
+          <h2 className="text-xl font-bold text-foreground mb-1 text-center">
+            {currentSet.title}
           </h2>
-          <p className="text-xs text-gray-400 text-center mb-4">
+          <p className="text-xs text-muted-foreground text-center mb-4">
             문장 {sentenceIndex + 1} / {currentSet.sentences.length}
           </p>
 
@@ -100,11 +117,11 @@ export default function ConversationLearning() {
                 key={i}
                 className={`p-4 rounded-2xl transition-all ${
                   i === sentenceIndex
-                    ? 'bg-purple-50 border-2 border-purple-300 shadow-sm'
-                    : 'bg-gray-50'
+                    ? 'bg-primary/10 border-2 border-primary shadow-sm animate-pop'
+                    : 'bg-muted'
                 }`}
               >
-                <p className={`text-lg ${i === sentenceIndex ? 'text-purple-700 font-bold' : 'text-gray-500'}`}>
+                <p className={`text-lg ${i === sentenceIndex ? 'text-primary font-bold' : 'text-muted-foreground'}`}>
                   {sentence.text}
                 </p>
               </div>
@@ -123,16 +140,18 @@ export default function ConversationLearning() {
             <button
               onClick={handleReplay}
               disabled={isPlaying}
-              className="flex-1 py-3 bg-gray-100 hover:bg-gray-200 text-gray-600 font-bold rounded-2xl disabled:opacity-40"
+              className="flex-1 flex items-center justify-center gap-2 py-3 bg-muted hover:bg-muted/80 text-foreground font-bold rounded-2xl disabled:opacity-40 transition-all hover:scale-105 active:scale-95"
             >
-              🔄 다시 듣기
+              <Volume2 className="w-5 h-5" />
+              다시 듣기
             </button>
             {isSetCompleted && !isLastSet && (
               <button
                 onClick={handleNextSet}
-                className="flex-1 py-3 bg-purple-500 hover:bg-purple-600 text-white font-bold rounded-2xl"
+                className="flex-1 flex items-center justify-center gap-2 py-3 bg-primary hover:bg-primary/90 text-primary-foreground font-bold rounded-2xl transition-all hover:scale-105 active:scale-95"
               >
-                다음 대화 &#8594;
+                다음 대화
+                <ChevronRight className="w-5 h-5" />
               </button>
             )}
           </div>
