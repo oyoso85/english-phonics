@@ -18,7 +18,7 @@ export default function VocabularyCategories() {
 
   const handleSelect = (category: VocabularyCategory) => {
     setVocabularyCategory(category);
-    navigate(`/vocabulary/${category}`);
+    navigate(`/vocabulary/${category}/cards`);
   };
 
   return (

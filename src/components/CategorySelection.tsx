@@ -20,7 +20,7 @@ export default function CategorySelection() {
     } else if (category === 'alphabet') {
       navigate('/alphabet-cards');
     } else {
-      navigate('/conversation');
+      navigate('/conversation-cards');
     }
   };
 

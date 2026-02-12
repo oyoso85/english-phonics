@@ -29,8 +29,10 @@ src/
     AlphabetCards.tsx    # /alphabet-cards - A~Z card grid (emoji + letter)
     AlphabetLearning.tsx # /alphabet - pronunciation learning (accepts startIndex via location.state)
     VocabularyCategories.tsx # /vocabulary-categories - vocab sub-category selection
-    VocabularyLearning.tsx  # /vocabulary/:category - vocab flashcard learning
-    ConversationLearning.tsx # /conversation - conversation learning
+    VocabularyWordCards.tsx  # /vocabulary/:category/cards - word card grid per category
+    VocabularyLearning.tsx  # /vocabulary/:category - vocab flashcard learning (accepts startIndex)
+    ConversationCards.tsx # /conversation-cards - conversation topic card grid
+    ConversationLearning.tsx # /conversation - conversation learning (accepts startSetIndex)
     AudioIndicator.tsx  # Playback state visual indicator
     AudioGesturePrompt.tsx # Browser audio autoplay permission prompt
     UserProfile.tsx     # User profile display
@@ -54,8 +56,8 @@ src/
 / (NicknameInput)
   -> /select-category (CategorySelection)
        -> /alphabet-cards (AlphabetCards) -> /alphabet (AlphabetLearning)
-       -> /vocabulary-categories -> /vocabulary/:category (VocabularyLearning)
-       -> /conversation (ConversationLearning)
+       -> /vocabulary-categories -> /vocabulary/:category/cards (VocabularyWordCards) -> /vocabulary/:category (VocabularyLearning)
+       -> /conversation-cards (ConversationCards) -> /conversation (ConversationLearning)
 ```
 
 ## Key Patterns

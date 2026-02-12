@@ -1,9 +1,8 @@
-import { useState, useEffect, useMemo } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
-import { ChevronLeft, ChevronRight, Volume2, ArrowLeft, RotateCcw, Home } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { useNavigate, useParams, useLocation } from 'react-router-dom';
+import { ChevronLeft, ChevronRight, Volume2, ArrowLeft } from 'lucide-react';
 import type { VocabularyCategory } from '../types';
 import { loadVocabularyByCategory, getVocabularyCategoryLabel } from '../utils/data';
-import { shuffle } from '../utils/shuffle';
 import { useAudioPlayer } from '../hooks/useAudioPlayer';
 import AudioIndicator from './AudioIndicator';
 import AudioGesturePrompt from './AudioGesturePrompt';
@@ -34,19 +33,17 @@ const categoryBadgeBg: Record<VocabularyCategory, string> = {
 
 export default function VocabularyLearning() {
   const navigate = useNavigate();
+  const location = useLocation();
   const { category } = useParams<{ category: string }>();
   const vocabCategory = category as VocabularyCategory;
+  const words = loadVocabularyByCategory(vocabCategory);
 
-  const words = useMemo(() => {
-    const loaded = loadVocabularyByCategory(vocabCategory);
-    return shuffle(loaded);
-  }, [vocabCategory]);
-
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const startIndex = (location.state as { startIndex?: number })?.startIndex ?? 0;
+  const [currentIndex, setCurrentIndex] = useState(startIndex);
   const [isAnimating, setIsAnimating] = useState(false);
   const current = words[currentIndex];
 
-  const { playbackState, currentRepetition, totalRepetitions, waitDuration, play, stop, isPlaying, isCompleted, userGestureRequired, enableAudio } =
+  const { playbackState, currentRepetition, totalRepetitions, waitDuration, play, stop, isPlaying, userGestureRequired, enableAudio } =
     useAudioPlayer({ repetitions: 3 });
 
   useEffect(() => {
@@ -74,43 +71,12 @@ export default function VocabularyLearning() {
     if (current) play(current.audio);
   };
 
-  const isLastWord = currentIndex === words.length - 1;
-  const isFinished = isLastWord && isCompleted;
+  const cardsPath = `/vocabulary/${vocabCategory}/cards`;
 
   if (!words.length) {
     return (
       <div className="flex items-center justify-center min-h-screen">
         <p className="text-muted-foreground">단어를 찾을 수 없어요</p>
-      </div>
-    );
-  }
-
-  if (isFinished) {
-    return (
-      <div className="flex items-center justify-center min-h-screen p-4">
-        <div className="bg-card rounded-3xl shadow-2xl p-8 md:p-12 text-center max-w-md w-full animate-bounce-in animate-fill-both">
-          <div className="text-6xl mb-6 animate-star-burst">🌟</div>
-          <h2 className="text-3xl font-bold text-foreground mb-2">훌륭해요!</h2>
-          <p className="text-muted-foreground mb-8">
-            {getVocabularyCategoryLabel(vocabCategory)} 단어를 모두 배웠어요!
-          </p>
-          <div className="flex gap-4 w-full">
-            <button
-              onClick={() => navigate('/vocabulary-categories')}
-              className="flex-1 flex items-center justify-center gap-2 py-4 bg-primary hover:bg-primary/90 text-primary-foreground font-bold rounded-2xl transition-all hover:scale-105 active:scale-95"
-            >
-              <RotateCcw className="w-5 h-5" />
-              다른 카테고리
-            </button>
-            <button
-              onClick={() => navigate('/select-category')}
-              className="flex-1 flex items-center justify-center gap-2 py-4 bg-muted hover:bg-muted/80 text-foreground font-bold rounded-2xl transition-all hover:scale-105 active:scale-95"
-            >
-              <Home className="w-5 h-5" />
-              홈으로
-            </button>
-          </div>
-        </div>
       </div>
     );
   }
@@ -122,7 +88,7 @@ export default function VocabularyLearning() {
       {/* Header */}
       <div className="flex items-center justify-between w-full max-w-2xl mb-4">
         <button
-          onClick={() => { stop(); navigate('/vocabulary-categories'); }}
+          onClick={() => { stop(); navigate(cardsPath); }}
           className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors px-4 py-3 rounded-2xl hover:bg-muted active:scale-95"
         >
           <ArrowLeft className="w-5 h-5" />
@@ -159,7 +125,7 @@ export default function VocabularyLearning() {
           {/* Right Arrow */}
           <button
             onClick={() => navigateWord('next')}
-            disabled={isLastWord}
+            disabled={currentIndex === words.length - 1}
             className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 z-10 w-12 h-12 md:w-14 md:h-14 rounded-full bg-card shadow-lg flex items-center justify-center hover:scale-110 active:scale-95 transition-transform disabled:opacity-30"
           >
             <ChevronRight className="w-7 h-7 text-muted-foreground" />
@@ -203,7 +169,7 @@ export default function VocabularyLearning() {
               </button>
               <button
                 onClick={() => navigateWord('next')}
-                disabled={isPlaying || isLastWord}
+                disabled={isPlaying || currentIndex === words.length - 1}
                 className="flex-1 flex items-center justify-center gap-2 py-3 bg-primary hover:bg-primary/90 text-primary-foreground font-bold rounded-2xl disabled:opacity-40 transition-all hover:scale-105 active:scale-95"
               >
                 다음

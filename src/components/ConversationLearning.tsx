@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { ArrowLeft, Volume2, ChevronRight, Home, MessageCircle } from 'lucide-react';
 import { loadConversations } from '../utils/data';
 import { useAudioPlayer } from '../hooks/useAudioPlayer';
@@ -8,8 +8,10 @@ import AudioGesturePrompt from './AudioGesturePrompt';
 
 export default function ConversationLearning() {
   const navigate = useNavigate();
+  const location = useLocation();
   const conversations = loadConversations();
-  const [setIndex, setSetIndex] = useState(0);
+  const startSetIndex = (location.state as { startSetIndex?: number })?.startSetIndex ?? 0;
+  const [setIndex, setSetIndex] = useState(startSetIndex);
   const [sentenceIndex, setSentenceIndex] = useState(0);
 
   const currentSet = conversations[setIndex];
@@ -35,41 +37,12 @@ export default function ConversationLearning() {
     return () => stop();
   }, [setIndex, sentenceIndex]);
 
-  const handleNextSet = () => {
-    stop();
-    if (setIndex < conversations.length - 1) {
-      setSetIndex(setIndex + 1);
-      setSentenceIndex(0);
-    }
-  };
-
   const handleReplay = () => {
     if (currentSentence) play(currentSentence.audio);
   };
 
   const isLastSentence = sentenceIndex === (currentSet?.sentences.length ?? 0) - 1;
-  const isLastSet = setIndex === conversations.length - 1;
   const isSetCompleted = isLastSentence && isCompleted;
-  const isAllFinished = isLastSet && isSetCompleted;
-
-  if (isAllFinished) {
-    return (
-      <div className="flex items-center justify-center min-h-screen p-4">
-        <div className="bg-card rounded-3xl shadow-2xl p-8 md:p-12 text-center max-w-md w-full animate-bounce-in animate-fill-both">
-          <div className="text-6xl mb-6 animate-star-burst">🎊</div>
-          <h2 className="text-3xl font-bold text-foreground mb-2">대단해요!</h2>
-          <p className="text-muted-foreground mb-8">모든 대화를 배웠어요!</p>
-          <button
-            onClick={() => navigate('/select-category')}
-            className="w-full flex items-center justify-center gap-2 py-4 bg-primary hover:bg-primary/90 text-primary-foreground font-bold rounded-2xl transition-all hover:scale-105 active:scale-95"
-          >
-            <Home className="w-5 h-5" />
-            홈으로
-          </button>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div className="flex flex-col items-center min-h-screen px-4 py-6">
@@ -78,7 +51,7 @@ export default function ConversationLearning() {
       {/* Header */}
       <div className="flex items-center justify-between w-full max-w-2xl mb-4">
         <button
-          onClick={() => { stop(); navigate('/select-category'); }}
+          onClick={() => { stop(); navigate('/conversation-cards'); }}
           className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors px-4 py-3 rounded-2xl hover:bg-muted active:scale-95"
         >
           <ArrowLeft className="w-5 h-5" />
@@ -146,13 +119,13 @@ export default function ConversationLearning() {
               <Volume2 className="w-5 h-5" />
               다시 듣기
             </button>
-            {isSetCompleted && !isLastSet && (
+            {isSetCompleted && (
               <button
-                onClick={handleNextSet}
+                onClick={() => { stop(); navigate('/conversation-cards'); }}
                 className="flex-1 flex items-center justify-center gap-2 py-3 bg-primary hover:bg-primary/90 text-primary-foreground font-bold rounded-2xl transition-all hover:scale-105 active:scale-95"
               >
-                다음 대화
-                <ChevronRight className="w-5 h-5" />
+                <Home className="w-5 h-5" />
+                목록으로
               </button>
             )}
           </div>
