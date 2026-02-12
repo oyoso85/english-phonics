@@ -57,7 +57,27 @@ export interface UserProfile {
 }
 
 // 학습 카테고리
-export type LearningCategory = 'alphabet' | 'vocabulary' | 'conversation';
+export type LearningCategory = 'alphabet' | 'vocabulary' | 'conversation' | 'quiz' | 'play';
+
+// 퀴즈 유형
+export type QuizType = 'listen-and-choose' | 'image-to-word' | 'first-sound' | 'spelling';
+
+// 놀이 유형
+export type PlayType = 'matching' | 'drag-and-drop';
+
+// 퀴즈/놀이 주제
+export type QuizSubject = 'alphabet' | VocabularyCategory;
+
+// 퀴즈 문제
+export interface QuizQuestion {
+  id: string;
+  correctAnswer: { label: string; emoji: string; audio: string };
+  choices: { label: string; emoji: string }[];
+  displayEmoji?: string;
+  displayWord?: string;
+  missingLetterIndex?: number;
+  letterChoices?: string[];
+}
 
 // 앱 전역 상태
 export interface AppState {

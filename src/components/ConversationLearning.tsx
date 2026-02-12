@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { ArrowLeft, Volume2, ChevronRight, Home, MessageCircle } from 'lucide-react';
+import { ArrowLeft, Volume2, Home, MessageCircle } from 'lucide-react';
 import { loadConversations } from '../utils/data';
 import { useAudioPlayer } from '../hooks/useAudioPlayer';
 import AudioIndicator from './AudioIndicator';
@@ -11,7 +11,7 @@ export default function ConversationLearning() {
   const location = useLocation();
   const conversations = loadConversations();
   const startSetIndex = (location.state as { startSetIndex?: number })?.startSetIndex ?? 0;
-  const [setIndex, setSetIndex] = useState(startSetIndex);
+  const [setIndex] = useState(startSetIndex);
   const [sentenceIndex, setSentenceIndex] = useState(0);
 
   const currentSet = conversations[setIndex];
@@ -55,7 +55,7 @@ export default function ConversationLearning() {
           className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors px-4 py-3 rounded-2xl hover:bg-muted active:scale-95"
         >
           <ArrowLeft className="w-5 h-5" />
-          <span className="text-lg font-medium">돌아가기</span>
+          <span className="text-lg font-medium">뒤로</span>
         </button>
         <span className="text-lg font-medium px-4 py-2 rounded-full bg-cat-orange text-orange-600">
           <MessageCircle className="w-4 h-4 inline mr-1" />

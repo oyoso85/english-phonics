@@ -19,7 +19,7 @@ export default function AlphabetCards() {
           className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors px-4 py-3 rounded-2xl hover:bg-muted active:scale-95"
         >
           <ArrowLeft className="w-5 h-5" />
-          <span className="text-lg font-medium">돌아가기</span>
+          <span className="text-lg font-medium">뒤로</span>
         </button>
         <span className="text-lg font-medium px-4 py-2 rounded-full bg-cat-blue text-blue-600">
           🔤 알파벳

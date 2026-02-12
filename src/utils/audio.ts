@@ -1,14 +1,23 @@
 let currentAudio: HTMLAudioElement | null = null;
+let currentReject: (() => void) | null = null;
 
 export function playAudio(src: string): Promise<void> {
   return new Promise((resolve, reject) => {
     stopAudio();
     currentAudio = new Audio(src);
-    currentAudio.addEventListener('ended', () => resolve());
-    currentAudio.addEventListener('error', () =>
-      reject(new Error(`Failed to load audio: ${src}`))
-    );
-    currentAudio.play().catch(reject);
+    currentReject = () => reject(new Error('Audio stopped'));
+    currentAudio.addEventListener('ended', () => {
+      currentReject = null;
+      resolve();
+    });
+    currentAudio.addEventListener('error', () => {
+      currentReject = null;
+      reject(new Error(`Failed to load audio: ${src}`));
+    });
+    currentAudio.play().catch((err) => {
+      currentReject = null;
+      reject(err);
+    });
   });
 }
 
@@ -18,6 +27,30 @@ export function stopAudio(): void {
     currentAudio.currentTime = 0;
     currentAudio = null;
   }
+  if (currentReject) {
+    currentReject();
+    currentReject = null;
+  }
+  speechSynthesis.cancel();
+}
+
+export function speakText(text: string, rate = 0.8): Promise<void> {
+  return new Promise((resolve, reject) => {
+    stopAudio();
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'en-US';
+    utterance.rate = rate;
+    currentReject = () => reject(new Error('Audio stopped'));
+    utterance.onend = () => {
+      currentReject = null;
+      resolve();
+    };
+    utterance.onerror = () => {
+      currentReject = null;
+      reject(new Error(`Failed to speak: ${text}`));
+    };
+    speechSynthesis.speak(utterance);
+  });
 }
 
 export function getAudioDuration(src: string): Promise<number> {

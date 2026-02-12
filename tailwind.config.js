@@ -39,6 +39,8 @@ export default {
         'cat-red': 'hsl(0, 100%, 95%)',
         'cat-yellow': 'hsl(45, 100%, 95%)',
         'cat-purple': 'hsl(270, 100%, 95%)',
+        'cat-pink': 'hsl(330, 100%, 95%)',
+        'cat-cyan': 'hsl(180, 100%, 95%)',
       },
       fontSize: {
         'huge': '4rem',
@@ -90,6 +92,17 @@ export default {
           '25%': { transform: 'scale(1.1) rotate(-5deg)' },
           '75%': { transform: 'scale(1.1) rotate(5deg)' },
         },
+        shake: {
+          '0%, 100%': { transform: 'translateX(0)' },
+          '20%': { transform: 'translateX(-6px)' },
+          '40%': { transform: 'translateX(6px)' },
+          '60%': { transform: 'translateX(-4px)' },
+          '80%': { transform: 'translateX(4px)' },
+        },
+        flip: {
+          '0%': { transform: 'rotateY(0deg)' },
+          '100%': { transform: 'rotateY(180deg)' },
+        },
       },
       animation: {
         'bounce-in': 'bounce-in 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55)',
@@ -101,6 +114,8 @@ export default {
         'fade-in': 'fadeIn 0.3s ease-out',
         'pop-in': 'popIn 0.4s ease-out',
         'celebrate': 'celebrate 0.6s ease-in-out',
+        'shake': 'shake 0.5s ease-in-out',
+        'flip': 'flip 0.3s ease-in-out',
       },
     },
   },

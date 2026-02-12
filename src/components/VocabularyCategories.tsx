@@ -29,7 +29,7 @@ export default function VocabularyCategories() {
           className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors px-4 py-3 rounded-2xl hover:bg-muted active:scale-95"
         >
           <ArrowLeft className="w-5 h-5" />
-          <span className="text-lg font-medium">돌아가기</span>
+          <span className="text-lg font-medium">뒤로</span>
         </button>
         <h1 className="text-2xl font-bold text-foreground">단어 카테고리</h1>
         <div className="w-24" />

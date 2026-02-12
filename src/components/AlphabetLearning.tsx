@@ -15,15 +15,22 @@ export default function AlphabetLearning() {
   const [isAnimating, setIsAnimating] = useState(false);
   const current = alphabets[currentIndex];
 
-  const { playbackState, currentRepetition, totalRepetitions, waitDuration, play, stop, isPlaying, isCompleted, userGestureRequired, enableAudio } =
+  const { playbackState, currentRepetition, totalRepetitions, waitDuration, playSequence, stop, isPlaying, isCompleted, userGestureRequired, enableAudio } =
     useAudioPlayer({
       repetitions: 3,
       onComplete: () => {},
     });
 
+  const playAlphabet = (letter: string, word: string) => {
+    playSequence([
+      { type: 'tts', src: letter, delay: 500 },
+      { type: 'tts', src: word },
+    ]);
+  };
+
   useEffect(() => {
     if (current) {
-      play(current.audioFile);
+      playAlphabet(current.letter, current.exampleWord);
     }
     return () => stop();
   }, [currentIndex]);
@@ -43,7 +50,7 @@ export default function AlphabetLearning() {
   };
 
   const handleReplay = () => {
-    if (current) play(current.audioFile);
+    if (current) playAlphabet(current.letter, current.exampleWord);
   };
 
   const isLastAlphabet = currentIndex === alphabets.length - 1;
@@ -88,7 +95,7 @@ export default function AlphabetLearning() {
           className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors px-4 py-3 rounded-2xl hover:bg-muted active:scale-95"
         >
           <ArrowLeft className="w-5 h-5" />
-          <span className="text-lg font-medium">돌아가기</span>
+          <span className="text-lg font-medium">뒤로</span>
         </button>
         <span className="text-lg font-medium px-4 py-2 rounded-full bg-cat-blue text-blue-600">
           🔤 알파벳

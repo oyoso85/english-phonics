@@ -1,6 +1,12 @@
 import { useState, useCallback, useRef, useEffect } from 'react';
 import type { AudioPlaybackState } from '../types';
-import { playAudio, stopAudio, getAudioDuration, wait } from '../utils/audio';
+import { playAudio, stopAudio, speakText, getAudioDuration, wait } from '../utils/audio';
+
+export interface AudioSequenceItem {
+  type: 'file' | 'tts';
+  src: string;
+  delay?: number; // ms to wait after this item
+}
 
 interface UseAudioPlayerOptions {
   repetitions?: number;
@@ -13,6 +19,7 @@ interface UseAudioPlayerReturn {
   totalRepetitions: number;
   waitDuration: number;
   play: (src: string) => Promise<void>;
+  playSequence: (items: AudioSequenceItem[]) => Promise<void>;
   stop: () => void;
   isPlaying: boolean;
   isCompleted: boolean;
@@ -29,6 +36,7 @@ export function useAudioPlayer(options: UseAudioPlayerOptions = {}): UseAudioPla
   const [userGestureRequired, setUserGestureRequired] = useState(false);
   const cancelledRef = useRef(false);
   const pendingSrcRef = useRef<string | null>(null);
+  const pendingItemsRef = useRef<AudioSequenceItem[] | null>(null);
 
   const stop = useCallback(() => {
     cancelledRef.current = true;
@@ -80,15 +88,69 @@ export function useAudioPlayer(options: UseAudioPlayerOptions = {}): UseAudioPla
     }
   }, [repetitions, onComplete]);
 
+  const playSequence = useCallback(async (items: AudioSequenceItem[]) => {
+    cancelledRef.current = false;
+    setPlaybackState('playing');
+    pendingItemsRef.current = items;
+
+    try {
+      for (let i = 0; i < repetitions; i++) {
+        if (cancelledRef.current) return;
+
+        setCurrentRepetition(i + 1);
+        setPlaybackState('playing');
+
+        for (const item of items) {
+          if (cancelledRef.current) return;
+          if (item.type === 'tts') {
+            await speakText(item.src);
+          } else {
+            await playAudio(item.src);
+          }
+          if (cancelledRef.current) return;
+          if (item.delay) {
+            await wait(item.delay);
+          }
+        }
+
+        if (cancelledRef.current) return;
+
+        if (i < repetitions - 1) {
+          const ms = 2000;
+          setWaitDuration(ms);
+          setPlaybackState('waiting');
+          await wait(ms);
+        }
+      }
+
+      if (!cancelledRef.current) {
+        setPlaybackState('completed');
+        onComplete?.();
+      }
+    } catch (error) {
+      if (!cancelledRef.current) {
+        if (error instanceof DOMException && error.name === 'NotAllowedError') {
+          setUserGestureRequired(true);
+        }
+        setPlaybackState('idle');
+      }
+    }
+  }, [repetitions, onComplete]);
+
   const enableAudio = useCallback(() => {
     setUserGestureRequired(false);
     const src = pendingSrcRef.current;
+    const items = pendingItemsRef.current;
     pendingSrcRef.current = null;
-    if (src) {
+    pendingItemsRef.current = null;
+    if (items) {
+      stopAudio();
+      playSequence(items);
+    } else if (src) {
       stopAudio();
       play(src);
     }
-  }, [play]);
+  }, [play, playSequence]);
 
   useEffect(() => {
     return () => {
@@ -103,6 +165,7 @@ export function useAudioPlayer(options: UseAudioPlayerOptions = {}): UseAudioPla
     totalRepetitions: repetitions,
     waitDuration,
     play,
+    playSequence,
     stop,
     isPlaying: playbackState === 'playing' || playbackState === 'waiting',
     isCompleted: playbackState === 'completed',

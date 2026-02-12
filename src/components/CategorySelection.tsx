@@ -7,6 +7,8 @@ const categories: { id: LearningCategory; label: string; icon: string; bgColor: 
   { id: 'alphabet', label: 'ABC 알파벳', icon: '🔤', bgColor: 'bg-cat-blue', textColor: 'text-blue-600' },
   { id: 'vocabulary', label: '단어 학습', icon: '📚', bgColor: 'bg-cat-green', textColor: 'text-green-600' },
   { id: 'conversation', label: '대화 학습', icon: '💬', bgColor: 'bg-cat-orange', textColor: 'text-orange-600' },
+  { id: 'quiz', label: '퀴즈', icon: '🧩', bgColor: 'bg-cat-pink', textColor: 'text-pink-600' },
+  { id: 'play', label: '놀이', icon: '🎮', bgColor: 'bg-cat-cyan', textColor: 'text-cyan-600' },
 ];
 
 export default function CategorySelection() {
@@ -19,6 +21,10 @@ export default function CategorySelection() {
       navigate('/vocabulary-categories');
     } else if (category === 'alphabet') {
       navigate('/alphabet-cards');
+    } else if (category === 'quiz') {
+      navigate('/quiz-types');
+    } else if (category === 'play') {
+      navigate('/play-types');
     } else {
       navigate('/conversation-cards');
     }
@@ -37,7 +43,7 @@ export default function CategorySelection() {
         <UserProfile />
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 w-full max-w-2xl">
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-5 w-full max-w-2xl">
         {categories.map((cat, index) => (
           <button
             key={cat.id}

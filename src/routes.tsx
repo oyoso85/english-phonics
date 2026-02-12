@@ -8,6 +8,17 @@ import AlphabetLearning from './components/AlphabetLearning'
 import VocabularyLearning from './components/VocabularyLearning'
 import ConversationCards from './components/ConversationCards'
 import ConversationLearning from './components/ConversationLearning'
+import QuizTypes from './components/quiz/QuizTypes'
+import QuizCategories from './components/quiz/QuizCategories'
+import QuizListenAndChoose from './components/quiz/QuizListenAndChoose'
+import QuizImageToWord from './components/quiz/QuizImageToWord'
+import QuizFirstSound from './components/quiz/QuizFirstSound'
+import QuizSpelling from './components/quiz/QuizSpelling'
+import QuizResult from './components/shared/QuizResult'
+import PlayTypes from './components/play/PlayTypes'
+import PlayCategories from './components/play/PlayCategories'
+import PlayMatchingGame from './components/play/PlayMatchingGame'
+import PlayDragAndDrop from './components/play/PlayDragAndDrop'
 
 export const AppRoutes = () => {
   return (
@@ -38,6 +49,21 @@ export const AppRoutes = () => {
 
       {/* 대화 학습 */}
       <Route path="/conversation" element={<ConversationLearning />} />
+
+      {/* 퀴즈 */}
+      <Route path="/quiz-types" element={<QuizTypes />} />
+      <Route path="/quiz/:type/categories" element={<QuizCategories />} />
+      <Route path="/quiz/listen-and-choose/:category" element={<QuizListenAndChoose />} />
+      <Route path="/quiz/image-to-word/:category" element={<QuizImageToWord />} />
+      <Route path="/quiz/first-sound/:category" element={<QuizFirstSound />} />
+      <Route path="/quiz/spelling/:category" element={<QuizSpelling />} />
+      <Route path="/quiz-result" element={<QuizResult />} />
+
+      {/* 놀이 */}
+      <Route path="/play-types" element={<PlayTypes />} />
+      <Route path="/play/:type/categories" element={<PlayCategories />} />
+      <Route path="/play/matching/:category" element={<PlayMatchingGame />} />
+      <Route path="/play/drag-and-drop/:category" element={<PlayDragAndDrop />} />
 
       {/* 404 - 홈으로 리다이렉트 */}
       <Route path="*" element={<Navigate to="/" replace />} />
