@@ -85,20 +85,43 @@ export default function ConversationLearning() {
           </p>
 
           <div className="space-y-3 mb-6 min-h-[200px]">
-            {visibleSentences.map((sentence, i) => (
-              <div
-                key={i}
-                className={`p-4 rounded-2xl transition-all ${
-                  i === sentenceIndex
-                    ? 'bg-primary/10 border-2 border-primary shadow-sm animate-pop'
-                    : 'bg-muted'
-                }`}
-              >
-                <p className={`text-lg ${i === sentenceIndex ? 'text-primary font-bold' : 'text-muted-foreground'}`}>
-                  {sentence.text}
-                </p>
-              </div>
-            ))}
+            {visibleSentences.map((sentence, i) => {
+              const isLeft = i % 2 === 0;
+              const isCurrent = i === sentenceIndex;
+              return (
+                <div
+                  key={i}
+                  className={`flex ${isLeft ? 'justify-start' : 'justify-end'}`}
+                >
+                  <div
+                    className={`max-w-[80%] px-4 py-3 transition-all ${
+                      isLeft
+                        ? 'rounded-2xl rounded-tl-sm'
+                        : 'rounded-2xl rounded-tr-sm'
+                    } ${
+                      isCurrent
+                        ? isLeft
+                          ? 'bg-primary/10 border-2 border-primary shadow-sm animate-pop'
+                          : 'bg-orange-50 border-2 border-orange-400 shadow-sm animate-pop'
+                        : isLeft
+                          ? 'bg-muted'
+                          : 'bg-orange-50/60'
+                    }`}
+                  >
+                    <p className={`text-lg ${
+                      isCurrent
+                        ? isLeft ? 'text-primary font-bold' : 'text-orange-600 font-bold'
+                        : 'text-muted-foreground'
+                    }`}>
+                      {sentence.text}
+                    </p>
+                    {sentence.ko && (
+                      <p className="text-sm text-gray-400 mt-1">{sentence.ko}</p>
+                    )}
+                  </div>
+                </div>
+              );
+            })}
           </div>
 
           <div className="flex justify-center mb-4">

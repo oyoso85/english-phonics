@@ -4,6 +4,7 @@ import type { QuizSubject } from '../../types';
 import { getSubjectData, getSubjectLabel } from '../../utils/quiz';
 import { shuffle } from '../../utils/shuffle';
 import { playCorrectSound, playWrongSound } from '../../utils/soundEffects';
+import { playAudio, speakText } from '../../utils/audio';
 
 interface Card {
   id: string;
@@ -11,6 +12,8 @@ interface Card {
   content: string;
   type: 'emoji' | 'text';
   status: 'hidden' | 'revealed' | 'matched';
+  audio?: string;
+  word?: string;
 }
 
 export default function PlayMatchingGame() {
@@ -36,15 +39,15 @@ export default function PlayMatchingGame() {
       cardPairs = selected.flatMap((item, idx) => {
         const word = item.word;
         return [
-          { id: `a-${idx}`, pairId: `p-${idx}`, content: word[0].toUpperCase(), type: 'text' as const, status: 'hidden' as const },
-          { id: `b-${idx}`, pairId: `p-${idx}`, content: word[0].toLowerCase(), type: 'text' as const, status: 'hidden' as const },
+          { id: `a-${idx}`, pairId: `p-${idx}`, content: word[0].toUpperCase(), type: 'text' as const, status: 'hidden' as const, audio: item.audio, word: item.word },
+          { id: `b-${idx}`, pairId: `p-${idx}`, content: word[0].toLowerCase(), type: 'text' as const, status: 'hidden' as const, audio: item.audio, word: item.word },
         ];
       });
     } else {
       // Emoji ↔ Word
       cardPairs = selected.flatMap((item, idx) => [
-        { id: `a-${idx}`, pairId: `p-${idx}`, content: item.emoji, type: 'emoji' as const, status: 'hidden' as const },
-        { id: `b-${idx}`, pairId: `p-${idx}`, content: item.label, type: 'text' as const, status: 'hidden' as const },
+        { id: `a-${idx}`, pairId: `p-${idx}`, content: item.emoji, type: 'emoji' as const, status: 'hidden' as const, audio: item.audio, word: item.word },
+        { id: `b-${idx}`, pairId: `p-${idx}`, content: item.label, type: 'text' as const, status: 'hidden' as const, audio: item.audio, word: item.word },
       ]);
     }
 
@@ -63,6 +66,13 @@ export default function PlayMatchingGame() {
     setCards((prev) =>
       prev.map((c) => (c.id === cardId ? { ...c, status: 'revealed' } : c))
     );
+
+    // Play word audio when card is flipped
+    if (card.audio) {
+      playAudio(card.audio).catch(() => {});
+    } else if (card.word) {
+      speakText(card.word).catch(() => {});
+    }
 
     if (newFlipped.length === 2) {
       setChecking(true);

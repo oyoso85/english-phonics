@@ -81,7 +81,9 @@ export default function QuizSpelling() {
             idx === missingIdx && filledLetter ? 'text-green-600' : 'text-foreground'
           }`}
         >
-          {idx === missingIdx && filledLetter ? filledLetter.toUpperCase() : char}
+          {idx === missingIdx && filledLetter
+            ? (idx === 0 ? filledLetter.toUpperCase() : filledLetter.toLowerCase())
+            : (idx === 0 ? char.toUpperCase() : char.toLowerCase())}
         </span>
       );
     });

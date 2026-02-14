@@ -3,462 +3,147 @@
     "id": "greeting",
     "title": "친구와 인사",
     "sentences": [
-      {
-        "text": "Hello!",
-        "audio": "assets/audio/conv-greeting-1.mp3"
-      },
-      {
-        "text": "Hi! How are you?",
-        "audio": "assets/audio/conv-greeting-2.mp3"
-      },
-      {
-        "text": "I am fine, thank you.",
-        "audio": "assets/audio/conv-greeting-3.mp3"
-      },
-      {
-        "text": "What is your name?",
-        "audio": "assets/audio/conv-greeting-4.mp3"
-      },
-      {
-        "text": "My name is Tom.",
-        "audio": "assets/audio/conv-greeting-5.mp3"
-      },
-      {
-        "text": "Nice to meet you!",
-        "audio": "assets/audio/conv-greeting-6.mp3"
-      },
-      {
-        "text": "Nice to meet you too.",
-        "audio": "assets/audio/conv-greeting-7.mp3"
-      },
-      {
-        "text": "How old are you?",
-        "audio": "assets/audio/conv-greeting-8.mp3"
-      },
-      {
-        "text": "I am five years old.",
-        "audio": "assets/audio/conv-greeting-9.mp3"
-      },
-      {
-        "text": "Where do you live?",
-        "audio": "assets/audio/conv-greeting-10.mp3"
-      },
-      {
-        "text": "I live near the park.",
-        "audio": "assets/audio/conv-greeting-11.mp3"
-      },
-      {
-        "text": "Do you want to play?",
-        "audio": "assets/audio/conv-greeting-12.mp3"
-      },
-      {
-        "text": "Yes, let's play!",
-        "audio": "assets/audio/conv-greeting-13.mp3"
-      },
-      {
-        "text": "See you later!",
-        "audio": "assets/audio/conv-greeting-14.mp3"
-      },
-      {
-        "text": "Goodbye!",
-        "audio": "assets/audio/conv-greeting-15.mp3"
-      }
+      { "text": "Hello!", "ko": "안녕!", "audio": "assets/audio/conv-greeting-1.mp3" },
+      { "text": "Hi! How are you?", "ko": "안녕! 어떻게 지내?", "audio": "assets/audio/conv-greeting-2.mp3" },
+      { "text": "I am fine, thank you.", "ko": "잘 지내, 고마워.", "audio": "assets/audio/conv-greeting-3.mp3" },
+      { "text": "What is your name?", "ko": "이름이 뭐야?", "audio": "assets/audio/conv-greeting-4.mp3" },
+      { "text": "My name is Tom.", "ko": "내 이름은 Tom이야.", "audio": "assets/audio/conv-greeting-5.mp3" },
+      { "text": "Nice to meet you!", "ko": "만나서 반가워!", "audio": "assets/audio/conv-greeting-6.mp3" },
+      { "text": "Nice to meet you too.", "ko": "나도 만나서 반가워.", "audio": "assets/audio/conv-greeting-7.mp3" },
+      { "text": "How old are you?", "ko": "몇 살이야?", "audio": "assets/audio/conv-greeting-8.mp3" },
+      { "text": "I am five years old.", "ko": "나는 다섯 살이야.", "audio": "assets/audio/conv-greeting-9.mp3" },
+      { "text": "Where do you live?", "ko": "어디에 살아?", "audio": "assets/audio/conv-greeting-10.mp3" },
+      { "text": "I live near the park.", "ko": "공원 근처에 살아.", "audio": "assets/audio/conv-greeting-11.mp3" },
+      { "text": "Do you want to play?", "ko": "같이 놀래?", "audio": "assets/audio/conv-greeting-12.mp3" },
+      { "text": "Yes, let's play!", "ko": "응, 같이 놀자!", "audio": "assets/audio/conv-greeting-13.mp3" },
+      { "text": "See you later!", "ko": "나중에 보자!", "audio": "assets/audio/conv-greeting-14.mp3" },
+      { "text": "Goodbye!", "ko": "잘 가!", "audio": "assets/audio/conv-greeting-15.mp3" }
     ]
   },
   {
     "id": "role-play",
     "title": "친구와 역할놀이",
     "sentences": [
-      {
-        "text": "Let's play together!",
-        "audio": "assets/audio/conv-role-play-1.mp3"
-      },
-      {
-        "text": "You are the doctor.",
-        "audio": "assets/audio/conv-role-play-2.mp3"
-      },
-      {
-        "text": "I am the patient.",
-        "audio": "assets/audio/conv-role-play-3.mp3"
-      },
-      {
-        "text": "What should I do?",
-        "audio": "assets/audio/conv-role-play-4.mp3"
-      },
-      {
-        "text": "Please sit down.",
-        "audio": "assets/audio/conv-role-play-5.mp3"
-      },
-      {
-        "text": "Open your mouth, please.",
-        "audio": "assets/audio/conv-role-play-6.mp3"
-      },
-      {
-        "text": "Say \"Ah\".",
-        "audio": "assets/audio/conv-role-play-7.mp3"
-      },
-      {
-        "text": "Does it hurt here?",
-        "audio": "assets/audio/conv-role-play-8.mp3"
-      },
-      {
-        "text": "No, it doesn't hurt.",
-        "audio": "assets/audio/conv-role-play-9.mp3"
-      },
-      {
-        "text": "You are very brave!",
-        "audio": "assets/audio/conv-role-play-10.mp3"
-      },
-      {
-        "text": "Here is your medicine.",
-        "audio": "assets/audio/conv-role-play-11.mp3"
-      },
-      {
-        "text": "Take this three times a day.",
-        "audio": "assets/audio/conv-role-play-12.mp3"
-      },
-      {
-        "text": "Thank you, doctor!",
-        "audio": "assets/audio/conv-role-play-13.mp3"
-      },
-      {
-        "text": "You will feel better soon.",
-        "audio": "assets/audio/conv-role-play-14.mp3"
-      },
-      {
-        "text": "Come back next week.",
-        "audio": "assets/audio/conv-role-play-15.mp3"
-      }
+      { "text": "Let's play together!", "ko": "같이 놀자!", "audio": "assets/audio/conv-role-play-1.mp3" },
+      { "text": "You are the doctor.", "ko": "너는 의사야.", "audio": "assets/audio/conv-role-play-2.mp3" },
+      { "text": "I am the patient.", "ko": "나는 환자야.", "audio": "assets/audio/conv-role-play-3.mp3" },
+      { "text": "What should I do?", "ko": "내가 뭘 하면 돼?", "audio": "assets/audio/conv-role-play-4.mp3" },
+      { "text": "Please sit down.", "ko": "앉아 주세요.", "audio": "assets/audio/conv-role-play-5.mp3" },
+      { "text": "Open your mouth, please.", "ko": "입 벌려 주세요.", "audio": "assets/audio/conv-role-play-6.mp3" },
+      { "text": "Say \"Ah\".", "ko": "\"아\" 해 보세요.", "audio": "assets/audio/conv-role-play-7.mp3" },
+      { "text": "Does it hurt here?", "ko": "여기 아파요?", "audio": "assets/audio/conv-role-play-8.mp3" },
+      { "text": "No, it doesn't hurt.", "ko": "아니요, 안 아파요.", "audio": "assets/audio/conv-role-play-9.mp3" },
+      { "text": "You are very brave!", "ko": "정말 용감하네요!", "audio": "assets/audio/conv-role-play-10.mp3" },
+      { "text": "Here is your medicine.", "ko": "여기 약이에요.", "audio": "assets/audio/conv-role-play-11.mp3" },
+      { "text": "Take this three times a day.", "ko": "하루에 세 번 드세요.", "audio": "assets/audio/conv-role-play-12.mp3" },
+      { "text": "Thank you, doctor!", "ko": "감사합니다, 선생님!", "audio": "assets/audio/conv-role-play-13.mp3" },
+      { "text": "You will feel better soon.", "ko": "곧 나을 거예요.", "audio": "assets/audio/conv-role-play-14.mp3" },
+      { "text": "Come back next week.", "ko": "다음 주에 다시 오세요.", "audio": "assets/audio/conv-role-play-15.mp3" }
     ]
   },
   {
     "id": "help-mom",
     "title": "엄마에게 도움 요청",
     "sentences": [
-      {
-        "text": "Mom, can you help me?",
-        "audio": "assets/audio/conv-help-mom-1.mp3"
-      },
-      {
-        "text": "I need your help.",
-        "audio": "assets/audio/conv-help-mom-2.mp3"
-      },
-      {
-        "text": "Can you open this?",
-        "audio": "assets/audio/conv-help-mom-3.mp3"
-      },
-      {
-        "text": "Thank you, Mom!",
-        "audio": "assets/audio/conv-help-mom-4.mp3"
-      },
-      {
-        "text": "I love you, Mom.",
-        "audio": "assets/audio/conv-help-mom-5.mp3"
-      },
-      {
-        "text": "Can you tie my shoes?",
-        "audio": "assets/audio/conv-help-mom-6.mp3"
-      },
-      {
-        "text": "I can't reach the shelf.",
-        "audio": "assets/audio/conv-help-mom-7.mp3"
-      },
-      {
-        "text": "Can you get it for me?",
-        "audio": "assets/audio/conv-help-mom-8.mp3"
-      },
-      {
-        "text": "This is too heavy for me.",
-        "audio": "assets/audio/conv-help-mom-9.mp3"
-      },
-      {
-        "text": "Can you carry this?",
-        "audio": "assets/audio/conv-help-mom-10.mp3"
-      },
-      {
-        "text": "I don't know how to do this.",
-        "audio": "assets/audio/conv-help-mom-11.mp3"
-      },
-      {
-        "text": "Can you show me?",
-        "audio": "assets/audio/conv-help-mom-12.mp3"
-      },
-      {
-        "text": "I spilled some water.",
-        "audio": "assets/audio/conv-help-mom-13.mp3"
-      },
-      {
-        "text": "Can you help me clean it?",
-        "audio": "assets/audio/conv-help-mom-14.mp3"
-      },
-      {
-        "text": "You are the best mom!",
-        "audio": "assets/audio/conv-help-mom-15.mp3"
-      }
+      { "text": "Mom, can you help me?", "ko": "엄마, 도와줄 수 있어?", "audio": "assets/audio/conv-help-mom-1.mp3" },
+      { "text": "I need your help.", "ko": "도움이 필요해.", "audio": "assets/audio/conv-help-mom-2.mp3" },
+      { "text": "Can you open this?", "ko": "이거 열어줄 수 있어?", "audio": "assets/audio/conv-help-mom-3.mp3" },
+      { "text": "Thank you, Mom!", "ko": "고마워, 엄마!", "audio": "assets/audio/conv-help-mom-4.mp3" },
+      { "text": "I love you, Mom.", "ko": "사랑해, 엄마.", "audio": "assets/audio/conv-help-mom-5.mp3" },
+      { "text": "Can you tie my shoes?", "ko": "신발끈 묶어줄 수 있어?", "audio": "assets/audio/conv-help-mom-6.mp3" },
+      { "text": "I can't reach the shelf.", "ko": "선반에 손이 안 닿아.", "audio": "assets/audio/conv-help-mom-7.mp3" },
+      { "text": "Can you get it for me?", "ko": "그거 가져다줄 수 있어?", "audio": "assets/audio/conv-help-mom-8.mp3" },
+      { "text": "This is too heavy for me.", "ko": "이거 나한테 너무 무거워.", "audio": "assets/audio/conv-help-mom-9.mp3" },
+      { "text": "Can you carry this?", "ko": "이거 들어줄 수 있어?", "audio": "assets/audio/conv-help-mom-10.mp3" },
+      { "text": "I don't know how to do this.", "ko": "이거 어떻게 하는지 모르겠어.", "audio": "assets/audio/conv-help-mom-11.mp3" },
+      { "text": "Can you show me?", "ko": "보여줄 수 있어?", "audio": "assets/audio/conv-help-mom-12.mp3" },
+      { "text": "I spilled some water.", "ko": "물을 쏟았어.", "audio": "assets/audio/conv-help-mom-13.mp3" },
+      { "text": "Can you help me clean it?", "ko": "닦는 거 도와줄 수 있어?", "audio": "assets/audio/conv-help-mom-14.mp3" },
+      { "text": "You are the best mom!", "ko": "엄마가 최고야!", "audio": "assets/audio/conv-help-mom-15.mp3" }
     ]
   },
   {
     "id": "help-dad",
     "title": "아빠에게 도움 요청",
     "sentences": [
-      {
-        "text": "Dad, can you help me?",
-        "audio": "assets/audio/conv-help-dad-1.mp3"
-      },
-      {
-        "text": "I can't reach it.",
-        "audio": "assets/audio/conv-help-dad-2.mp3"
-      },
-      {
-        "text": "Can you get it for me?",
-        "audio": "assets/audio/conv-help-dad-3.mp3"
-      },
-      {
-        "text": "Thank you, Dad!",
-        "audio": "assets/audio/conv-help-dad-4.mp3"
-      },
-      {
-        "text": "You are the best, Dad.",
-        "audio": "assets/audio/conv-help-dad-5.mp3"
-      },
-      {
-        "text": "Can you fix my toy?",
-        "audio": "assets/audio/conv-help-dad-6.mp3"
-      },
-      {
-        "text": "It is broken.",
-        "audio": "assets/audio/conv-help-dad-7.mp3"
-      },
-      {
-        "text": "Can you help me build this?",
-        "audio": "assets/audio/conv-help-dad-8.mp3"
-      },
-      {
-        "text": "I need to put this together.",
-        "audio": "assets/audio/conv-help-dad-9.mp3"
-      },
-      {
-        "text": "Can you teach me?",
-        "audio": "assets/audio/conv-help-dad-10.mp3"
-      },
-      {
-        "text": "I want to learn how to do it.",
-        "audio": "assets/audio/conv-help-dad-11.mp3"
-      },
-      {
-        "text": "Can we play outside?",
-        "audio": "assets/audio/conv-help-dad-12.mp3"
-      },
-      {
-        "text": "Let's play ball!",
-        "audio": "assets/audio/conv-help-dad-13.mp3"
-      },
-      {
-        "text": "Can you push me on the swing?",
-        "audio": "assets/audio/conv-help-dad-14.mp3"
-      },
-      {
-        "text": "This is so much fun!",
-        "audio": "assets/audio/conv-help-dad-15.mp3"
-      }
+      { "text": "Dad, can you help me?", "ko": "아빠, 도와줄 수 있어?", "audio": "assets/audio/conv-help-dad-1.mp3" },
+      { "text": "I can't reach it.", "ko": "손이 안 닿아.", "audio": "assets/audio/conv-help-dad-2.mp3" },
+      { "text": "Can you get it for me?", "ko": "그거 가져다줄 수 있어?", "audio": "assets/audio/conv-help-dad-3.mp3" },
+      { "text": "Thank you, Dad!", "ko": "고마워, 아빠!", "audio": "assets/audio/conv-help-dad-4.mp3" },
+      { "text": "You are the best, Dad.", "ko": "아빠가 최고야.", "audio": "assets/audio/conv-help-dad-5.mp3" },
+      { "text": "Can you fix my toy?", "ko": "내 장난감 고쳐줄 수 있어?", "audio": "assets/audio/conv-help-dad-6.mp3" },
+      { "text": "It is broken.", "ko": "이거 망가졌어.", "audio": "assets/audio/conv-help-dad-7.mp3" },
+      { "text": "Can you help me build this?", "ko": "이거 만드는 거 도와줄 수 있어?", "audio": "assets/audio/conv-help-dad-8.mp3" },
+      { "text": "I need to put this together.", "ko": "이거 조립해야 해.", "audio": "assets/audio/conv-help-dad-9.mp3" },
+      { "text": "Can you teach me?", "ko": "가르쳐줄 수 있어?", "audio": "assets/audio/conv-help-dad-10.mp3" },
+      { "text": "I want to learn how to do it.", "ko": "어떻게 하는지 배우고 싶어.", "audio": "assets/audio/conv-help-dad-11.mp3" },
+      { "text": "Can we play outside?", "ko": "밖에서 놀아도 돼?", "audio": "assets/audio/conv-help-dad-12.mp3" },
+      { "text": "Let's play ball!", "ko": "공놀이 하자!", "audio": "assets/audio/conv-help-dad-13.mp3" },
+      { "text": "Can you push me on the swing?", "ko": "그네 밀어줄 수 있어?", "audio": "assets/audio/conv-help-dad-14.mp3" },
+      { "text": "This is so much fun!", "ko": "너무 재밌다!", "audio": "assets/audio/conv-help-dad-15.mp3" }
     ]
   },
   {
     "id": "feelings",
     "title": "나의 감정 상태",
     "sentences": [
-      {
-        "text": "I am happy today.",
-        "audio": "assets/audio/conv-feelings-1.mp3"
-      },
-      {
-        "text": "I feel sad.",
-        "audio": "assets/audio/conv-feelings-2.mp3"
-      },
-      {
-        "text": "I am excited!",
-        "audio": "assets/audio/conv-feelings-3.mp3"
-      },
-      {
-        "text": "I am tired.",
-        "audio": "assets/audio/conv-feelings-4.mp3"
-      },
-      {
-        "text": "I love this!",
-        "audio": "assets/audio/conv-feelings-5.mp3"
-      },
-      {
-        "text": "I am scared.",
-        "audio": "assets/audio/conv-feelings-6.mp3"
-      },
-      {
-        "text": "Don't worry, it's okay.",
-        "audio": "assets/audio/conv-feelings-7.mp3"
-      },
-      {
-        "text": "I feel angry.",
-        "audio": "assets/audio/conv-feelings-8.mp3"
-      },
-      {
-        "text": "I need a hug.",
-        "audio": "assets/audio/conv-feelings-9.mp3"
-      },
-      {
-        "text": "I am so proud!",
-        "audio": "assets/audio/conv-feelings-10.mp3"
-      },
-      {
-        "text": "This makes me smile.",
-        "audio": "assets/audio/conv-feelings-11.mp3"
-      },
-      {
-        "text": "I feel much better now.",
-        "audio": "assets/audio/conv-feelings-12.mp3"
-      },
-      {
-        "text": "I am surprised!",
-        "audio": "assets/audio/conv-feelings-13.mp3"
-      },
-      {
-        "text": "That was fun!",
-        "audio": "assets/audio/conv-feelings-14.mp3"
-      },
-      {
-        "text": "I feel sleepy.",
-        "audio": "assets/audio/conv-feelings-15.mp3"
-      }
+      { "text": "I am happy today.", "ko": "오늘 기분이 좋아.", "audio": "assets/audio/conv-feelings-1.mp3" },
+      { "text": "I feel sad.", "ko": "슬퍼.", "audio": "assets/audio/conv-feelings-2.mp3" },
+      { "text": "I am excited!", "ko": "신나!", "audio": "assets/audio/conv-feelings-3.mp3" },
+      { "text": "I am tired.", "ko": "피곤해.", "audio": "assets/audio/conv-feelings-4.mp3" },
+      { "text": "I love this!", "ko": "이거 좋아!", "audio": "assets/audio/conv-feelings-5.mp3" },
+      { "text": "I am scared.", "ko": "무서워.", "audio": "assets/audio/conv-feelings-6.mp3" },
+      { "text": "Don't worry, it's okay.", "ko": "걱정 마, 괜찮아.", "audio": "assets/audio/conv-feelings-7.mp3" },
+      { "text": "I feel angry.", "ko": "화가 나.", "audio": "assets/audio/conv-feelings-8.mp3" },
+      { "text": "I need a hug.", "ko": "안아줘.", "audio": "assets/audio/conv-feelings-9.mp3" },
+      { "text": "I am so proud!", "ko": "정말 뿌듯해!", "audio": "assets/audio/conv-feelings-10.mp3" },
+      { "text": "This makes me smile.", "ko": "이거 보면 웃음이 나.", "audio": "assets/audio/conv-feelings-11.mp3" },
+      { "text": "I feel much better now.", "ko": "이제 훨씬 나아.", "audio": "assets/audio/conv-feelings-12.mp3" },
+      { "text": "I am surprised!", "ko": "깜짝이야!", "audio": "assets/audio/conv-feelings-13.mp3" },
+      { "text": "That was fun!", "ko": "재밌었어!", "audio": "assets/audio/conv-feelings-14.mp3" },
+      { "text": "I feel sleepy.", "ko": "졸려.", "audio": "assets/audio/conv-feelings-15.mp3" }
     ]
   },
   {
     "id": "request-item",
     "title": "XX 주세요",
     "sentences": [
-      {
-        "text": "Can I have some water, please?",
-        "audio": "assets/audio/conv-request-item-1.mp3"
-      },
-      {
-        "text": "May I have a cookie?",
-        "audio": "assets/audio/conv-request-item-2.mp3"
-      },
-      {
-        "text": "Can you give me the ball?",
-        "audio": "assets/audio/conv-request-item-3.mp3"
-      },
-      {
-        "text": "I want some juice, please.",
-        "audio": "assets/audio/conv-request-item-4.mp3"
-      },
-      {
-        "text": "Can I have more, please?",
-        "audio": "assets/audio/conv-request-item-5.mp3"
-      },
-      {
-        "text": "May I have a snack?",
-        "audio": "assets/audio/conv-request-item-6.mp3"
-      },
-      {
-        "text": "Can you pass me the toy?",
-        "audio": "assets/audio/conv-request-item-7.mp3"
-      },
-      {
-        "text": "I would like some milk.",
-        "audio": "assets/audio/conv-request-item-8.mp3"
-      },
-      {
-        "text": "Can I have a napkin?",
-        "audio": "assets/audio/conv-request-item-9.mp3"
-      },
-      {
-        "text": "Please give me the pencil.",
-        "audio": "assets/audio/conv-request-item-10.mp3"
-      },
-      {
-        "text": "May I have some fruit?",
-        "audio": "assets/audio/conv-request-item-11.mp3"
-      },
-      {
-        "text": "Can I get a tissue?",
-        "audio": "assets/audio/conv-request-item-12.mp3"
-      },
-      {
-        "text": "I need my backpack, please.",
-        "audio": "assets/audio/conv-request-item-13.mp3"
-      },
-      {
-        "text": "Can you hand me that book?",
-        "audio": "assets/audio/conv-request-item-14.mp3"
-      },
-      {
-        "text": "May I have another one?",
-        "audio": "assets/audio/conv-request-item-15.mp3"
-      }
+      { "text": "Can I have some water, please?", "ko": "물 좀 주세요.", "audio": "assets/audio/conv-request-item-1.mp3" },
+      { "text": "May I have a cookie?", "ko": "쿠키 하나 먹어도 돼요?", "audio": "assets/audio/conv-request-item-2.mp3" },
+      { "text": "Can you give me the ball?", "ko": "공 줄 수 있어?", "audio": "assets/audio/conv-request-item-3.mp3" },
+      { "text": "I want some juice, please.", "ko": "주스 좀 주세요.", "audio": "assets/audio/conv-request-item-4.mp3" },
+      { "text": "Can I have more, please?", "ko": "더 주세요.", "audio": "assets/audio/conv-request-item-5.mp3" },
+      { "text": "May I have a snack?", "ko": "간식 먹어도 돼요?", "audio": "assets/audio/conv-request-item-6.mp3" },
+      { "text": "Can you pass me the toy?", "ko": "장난감 좀 건네줄래?", "audio": "assets/audio/conv-request-item-7.mp3" },
+      { "text": "I would like some milk.", "ko": "우유 좀 주세요.", "audio": "assets/audio/conv-request-item-8.mp3" },
+      { "text": "Can I have a napkin?", "ko": "냅킨 좀 주세요.", "audio": "assets/audio/conv-request-item-9.mp3" },
+      { "text": "Please give me the pencil.", "ko": "연필 좀 주세요.", "audio": "assets/audio/conv-request-item-10.mp3" },
+      { "text": "May I have some fruit?", "ko": "과일 먹어도 돼요?", "audio": "assets/audio/conv-request-item-11.mp3" },
+      { "text": "Can I get a tissue?", "ko": "휴지 좀 줄래요?", "audio": "assets/audio/conv-request-item-12.mp3" },
+      { "text": "I need my backpack, please.", "ko": "가방 좀 주세요.", "audio": "assets/audio/conv-request-item-13.mp3" },
+      { "text": "Can you hand me that book?", "ko": "그 책 좀 건네줄래?", "audio": "assets/audio/conv-request-item-14.mp3" },
+      { "text": "May I have another one?", "ko": "하나 더 줄 수 있어요?", "audio": "assets/audio/conv-request-item-15.mp3" }
     ]
   },
   {
     "id": "request-action",
     "title": "XX 해주세요",
     "sentences": [
-      {
-        "text": "Please read me a book.",
-        "audio": "assets/audio/conv-request-action-1.mp3"
-      },
-      {
-        "text": "Can you sing a song?",
-        "audio": "assets/audio/conv-request-action-2.mp3"
-      },
-      {
-        "text": "Please play with me.",
-        "audio": "assets/audio/conv-request-action-3.mp3"
-      },
-      {
-        "text": "Can you tie my shoes?",
-        "audio": "assets/audio/conv-request-action-4.mp3"
-      },
-      {
-        "text": "Please help me draw.",
-        "audio": "assets/audio/conv-request-action-5.mp3"
-      },
-      {
-        "text": "Can you turn on the light?",
-        "audio": "assets/audio/conv-request-action-6.mp3"
-      },
-      {
-        "text": "Please open the door.",
-        "audio": "assets/audio/conv-request-action-7.mp3"
-      },
-      {
-        "text": "Can you close the window?",
-        "audio": "assets/audio/conv-request-action-8.mp3"
-      },
-      {
-        "text": "Please wait for me.",
-        "audio": "assets/audio/conv-request-action-9.mp3"
-      },
-      {
-        "text": "Can you hold my hand?",
-        "audio": "assets/audio/conv-request-action-10.mp3"
-      },
-      {
-        "text": "Please tell me a story.",
-        "audio": "assets/audio/conv-request-action-11.mp3"
-      },
-      {
-        "text": "Can you show me how?",
-        "audio": "assets/audio/conv-request-action-12.mp3"
-      },
-      {
-        "text": "Please come here.",
-        "audio": "assets/audio/conv-request-action-13.mp3"
-      },
-      {
-        "text": "Can you listen to me?",
-        "audio": "assets/audio/conv-request-action-14.mp3"
-      },
-      {
-        "text": "Please stay with me.",
-        "audio": "assets/audio/conv-request-action-15.mp3"
-      }
+      { "text": "Please read me a book.", "ko": "책 읽어주세요.", "audio": "assets/audio/conv-request-action-1.mp3" },
+      { "text": "Can you sing a song?", "ko": "노래 불러줄 수 있어?", "audio": "assets/audio/conv-request-action-2.mp3" },
+      { "text": "Please play with me.", "ko": "나랑 놀아주세요.", "audio": "assets/audio/conv-request-action-3.mp3" },
+      { "text": "Can you tie my shoes?", "ko": "신발끈 묶어줄 수 있어?", "audio": "assets/audio/conv-request-action-4.mp3" },
+      { "text": "Please help me draw.", "ko": "그림 그리는 거 도와주세요.", "audio": "assets/audio/conv-request-action-5.mp3" },
+      { "text": "Can you turn on the light?", "ko": "불 켜줄 수 있어?", "audio": "assets/audio/conv-request-action-6.mp3" },
+      { "text": "Please open the door.", "ko": "문 열어주세요.", "audio": "assets/audio/conv-request-action-7.mp3" },
+      { "text": "Can you close the window?", "ko": "창문 닫아줄 수 있어?", "audio": "assets/audio/conv-request-action-8.mp3" },
+      { "text": "Please wait for me.", "ko": "기다려주세요.", "audio": "assets/audio/conv-request-action-9.mp3" },
+      { "text": "Can you hold my hand?", "ko": "손 잡아줄 수 있어?", "audio": "assets/audio/conv-request-action-10.mp3" },
+      { "text": "Please tell me a story.", "ko": "이야기 해주세요.", "audio": "assets/audio/conv-request-action-11.mp3" },
+      { "text": "Can you show me how?", "ko": "어떻게 하는지 보여줄 수 있어?", "audio": "assets/audio/conv-request-action-12.mp3" },
+      { "text": "Please come here.", "ko": "여기로 와주세요.", "audio": "assets/audio/conv-request-action-13.mp3" },
+      { "text": "Can you listen to me?", "ko": "내 말 들어줄 수 있어?", "audio": "assets/audio/conv-request-action-14.mp3" },
+      { "text": "Please stay with me.", "ko": "같이 있어주세요.", "audio": "assets/audio/conv-request-action-15.mp3" }
     ]
   }
 ]

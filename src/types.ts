@@ -32,6 +32,7 @@ export interface VocabularyData {
 // 대화 데이터 타입
 export interface ConversationSentence {
   text: string;
+  ko?: string;
   audio: string;
 }
 
